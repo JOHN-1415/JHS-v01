@@ -1,13 +1,44 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import SketchBackground from './SketchBackground';
 
 const BASE = import.meta.env.BASE_URL;
 
+const slideshowImages = [
+    'gallery-exterior.jpg',
+    'gallery-groceries.jpg',
+    'gallery-jewels.jpg',
+    'gallery-shoes.jpg',
+    'gallery-gifts.jpg',
+    'gallery-stationary.jpg',
+];
+
 function Hero() {
+    const [activeSlide, setActiveSlide] = useState(0);
+
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setActiveSlide((prev) => (prev + 1) % slideshowImages.length);
+        }, 5000);
+        return () => clearInterval(timer);
+    }, []);
+
     return (
         <section id="home" className="hero" style={{ position: 'relative', overflow: 'hidden' }}>
+            {/* Background slideshow */}
+            <div className="hero-slideshow">
+                {slideshowImages.map((img, i) => (
+                    <img
+                        key={img}
+                        src={`${BASE}${img}`}
+                        alt=""
+                        className={`hero-slide${i === activeSlide ? ' active' : ''}`}
+                    />
+                ))}
+            </div>
+            {/* Dark overlay for readability */}
+            <div className="hero-overlay"></div>
             <SketchBackground color="#2ECC71" opacity={0.05} />
-            <div className="container hero-container" style={{ position: 'relative', zIndex: 1 }}>
+            <div className="container hero-container" style={{ position: 'relative', zIndex: 2 }}>
                 <div className="hero-content reveal">
                     <div className="hero-badge">
                         <i className="fa-solid fa-star"></i> 4.6 Rating · Trusted 10+ Years
