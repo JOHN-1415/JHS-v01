@@ -51,7 +51,7 @@ function Hero() {
                     </div>
                 </div>
                 <div className="hero-image reveal">
-                    <img src="/store-exterior.jpg" alt="Jeya Hyper Store Exterior" className="main-image" />
+                    <img src="/gallery-exterior.jpg" alt="Jeya Hyper Store Exterior" className="main-image" />
                 </div>
             </div>
         </section>

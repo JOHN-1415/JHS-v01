@@ -15,7 +15,6 @@ const PRODUCTS = [
             { name: 'Spices', img: '/cat-groceries-3.jpg' },
             { name: 'Oils & Ghee', img: '/cat-groceries-4.jpg' },
             { name: 'Packed Foods', img: '/cat-groceries-5.jpg' },
-            { name: 'Salt & Sugar', img: '/cat-groceries-6.jpg' },
         ],
     },
     {
@@ -27,9 +26,6 @@ const PRODUCTS = [
             { name: 'Canvas Shoes', img: '/cat-shoes-1.jpg' },
             { name: 'Leather Shoes', img: '/cat-shoes-2.jpg' },
             { name: 'Sports Shoes', img: '/cat-shoes-3.jpg' },
-            { name: "Boys' Sizes", img: '/cat-shoes-4.jpg' },
-            { name: "Girls' Sizes", img: '/cat-shoes-5.jpg' },
-            { name: 'School Bags', img: '/cat-shoes-6.jpg' },
         ],
     },
     {
@@ -42,8 +38,6 @@ const PRODUCTS = [
             { name: 'Gift Wrapping', img: '/cat-gifts-2.jpg' },
             { name: 'Seasonal Gifts', img: '/cat-gifts-3.jpg' },
             { name: 'Greeting Cards', img: '/cat-gifts-4.jpg' },
-            { name: 'Chocolates', img: '/cat-gifts-5.jpg' },
-            { name: 'Candles & Décor', img: '/cat-gifts-6.jpg' },
         ],
     },
     {
@@ -55,9 +49,6 @@ const PRODUCTS = [
             { name: 'Stuffed Toys', img: '/cat-toys-1.jpg' },
             { name: 'Board Games', img: '/cat-toys-2.jpg' },
             { name: 'Car Toys', img: '/cat-toys-3.jpg' },
-            { name: 'Puzzles', img: '/cat-toys-4.jpg' },
-            { name: 'Outdoor Toys', img: '/cat-toys-5.jpg' },
-            { name: 'Educational', img: '/cat-toys-6.jpg' },
         ],
     },
     {
@@ -68,10 +59,6 @@ const PRODUCTS = [
         items: [
             { name: 'Rings & Sets', img: '/cat-jewels-1.jpg' },
             { name: 'Necklaces', img: '/cat-jewels-2.jpg' },
-            { name: 'Gold-plated', img: '/cat-jewels-3.jpg' },
-            { name: 'Bangles', img: '/cat-jewels-4.jpg' },
-            { name: 'Earrings', img: '/cat-jewels-5.jpg' },
-            { name: 'Chains', img: '/cat-jewels-6.jpg' },
         ],
     },
     {
@@ -84,8 +71,6 @@ const PRODUCTS = [
             { name: 'Pencils & Pens', img: '/cat-stationary-2.jpg' },
             { name: 'Geometry Box', img: '/cat-stationary-3.jpg' },
             { name: 'Art Supplies', img: '/cat-stationary-4.jpg' },
-            { name: 'Craft Items', img: '/cat-stationary-5.jpg' },
-            { name: 'Writing Tools', img: '/cat-stationary-6.jpg' },
         ],
     },
 ];
@@ -93,11 +78,6 @@ const PRODUCTS = [
 function Products() {
     const [activeTab, setActiveTab] = useState(null);
     const activeProduct = activeTab ? PRODUCTS.find(p => p.id === activeTab) : null;
-
-    const handleImgError = (e) => {
-        e.target.style.display = 'none';
-        e.target.nextSibling.style.display = 'flex';
-    };
 
     const waLink = (msg) => `${WA_BASE}?text=${encodeURIComponent(msg)}`;
 
@@ -143,13 +123,8 @@ function Products() {
                                         <img
                                             src={item.img}
                                             alt={item.name}
-                                            onError={handleImgError}
                                         />
-                                        <div className="product-img-placeholder" style={{ display: 'none' }}>
-                                            <span className="placeholder-name">{item.name}</span>
-                                        </div>
                                     </div>
-                                    <div className="product-card-label">{item.name}</div>
                                 </div>
                             ))}
                         </div>

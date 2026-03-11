@@ -7,7 +7,6 @@ const galleryItems = [
     { src: '/gallery-gifts.jpg', caption: 'Gifts & Toys Aisle', featured: false },
     { src: '/gallery-jewels.jpg', caption: 'Jewellery Collection', featured: false },
     { src: '/gallery-stationary.jpg', caption: 'Stationery Section', featured: false },
-    { src: '/gallery-exterior.jpg', caption: 'Store Entrance', featured: false },
 ];
 
 function Gallery() {
