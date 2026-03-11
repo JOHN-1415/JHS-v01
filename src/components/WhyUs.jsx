@@ -4,22 +4,22 @@ import SketchBackground from './SketchBackground';
 function WhyUs() {
     const features = [
         {
-            icon: '🏬',
+            // icon: '🏬',
             title: '6 Departments',
             desc: 'Everything from groceries to jewels, all under one roof.',
         },
         {
-            icon: '💰',
+            // icon: '💰',
             title: 'Honest Prices',
             desc: 'Best value in Srirangam, no hidden charges.',
         },
         {
-            icon: '😊',
+            // icon: '😊',
             title: 'Friendly Service',
             desc: 'Our staff is always ready to help you find what you need.',
         },
         {
-            icon: '⭐',
+            // icon: '⭐',
             title: 'Loyalty Rewards',
             desc: 'Earn points on every purchase — the more you shop, the more you save!',
         },
