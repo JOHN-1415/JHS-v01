@@ -1,15 +1,22 @@
 import React from 'react';
 import SketchBackground from './SketchBackground';
 
-function Footer() {
+function Footer({ setCurrentPage }) {
+    const goHome = () => {
+        if (setCurrentPage) {
+            setCurrentPage('home');
+            window.scrollTo(0, 0);
+        }
+    };
+
     return (
         <footer className="footer" style={{ position: 'relative', overflow: 'hidden' }}>
-            <SketchBackground color="#7DC832" opacity={0.04} />
+            <SketchBackground color="#2ECC71" opacity={0.03} />
             <div className="container footer-container" style={{ position: 'relative', zIndex: 1 }}>
                 <div className="footer-col">
-                    <a href="#" className="footer-logo">
+                    <span className="footer-logo" onClick={goHome} style={{ cursor: 'pointer' }}>
                         <span className="lime">Jeya</span> <span className="gold">Hyper</span> Store
-                    </a>
+                    </span>
                     <p className="footer-desc">
                         Your trusted neighbourhood store in Srirangam, Trichy. Quality products, honest prices, and warm service — all under one roof.
                     </p>
@@ -31,9 +38,9 @@ function Footer() {
                 <div className="footer-col">
                     <h4 className="footer-heading">Quick Links</h4>
                     <ul className="footer-links">
-                        <li><a href="#home">Home</a></li>
+                        <li><a href="#home" onClick={goHome}>Home</a></li>
                         <li><a href="#about">About</a></li>
-                        <li><a href="#products">Products</a></li>
+                        <li><a href="#services">Services</a></li>
                         <li><a href="#testimonials">Testimonials</a></li>
                         <li><a href="#faq">FAQ</a></li>
                         <li><a href="#location">Location</a></li>

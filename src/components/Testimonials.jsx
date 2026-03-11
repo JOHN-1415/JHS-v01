@@ -34,7 +34,7 @@ const REVIEWS = [
 function Testimonials() {
     return (
         <section id="testimonials" className="testimonials section-padding" style={{ position: 'relative', overflow: 'hidden' }}>
-            <SketchBackground color="#7DC832" opacity={0.05} />
+            <SketchBackground color="#2ECC71" opacity={0.04} />
             <div className="container" style={{ position: 'relative', zIndex: 1 }}>
                 <div className="text-center reveal">
                     <span className="section-label">Testimonials</span>

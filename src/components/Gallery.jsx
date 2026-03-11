@@ -1,18 +1,20 @@
 import React from 'react';
 import SketchBackground from './SketchBackground';
 
+const BASE = import.meta.env.BASE_URL;
+
 const galleryItems = [
-    { src: '/gallery-groceries.jpg', caption: 'Fresh Grocery Section', featured: true },
-    { src: '/gallery-shoes.jpg', caption: 'School Shoes Corner', featured: false },
-    { src: '/gallery-gifts.jpg', caption: 'Gifts & Toys Aisle', featured: false },
-    { src: '/gallery-jewels.jpg', caption: 'Jewellery Collection', featured: false },
-    { src: '/gallery-stationary.jpg', caption: 'Stationery Section', featured: false },
+    { src: `${BASE}gallery-groceries.jpg`, caption: 'Fresh Grocery Section', featured: true },
+    { src: `${BASE}gallery-shoes.jpg`, caption: 'School Shoes Corner', featured: false },
+    { src: `${BASE}gallery-gifts.jpg`, caption: 'Gifts & Toys Aisle', featured: false },
+    { src: `${BASE}gallery-jewels.jpg`, caption: 'Jewellery Collection', featured: false },
+    { src: `${BASE}gallery-stationary.jpg`, caption: 'Stationery Section', featured: false },
 ];
 
 function Gallery() {
     return (
         <section id="gallery" className="gallery section-padding" style={{ position: 'relative', overflow: 'hidden' }}>
-            <SketchBackground color="#1B6B3A" opacity={0.04} />
+            <SketchBackground color="#1E3A8A" opacity={0.04} />
             <div className="container" style={{ position: 'relative', zIndex: 1 }}>
                 <div className="text-center reveal">
                     <span className="section-label">Store Gallery</span>

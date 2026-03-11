@@ -1,13 +1,15 @@
 import React from 'react';
 import SketchBackground from './SketchBackground';
 
+const BASE = import.meta.env.BASE_URL;
+
 function About() {
     return (
         <section id="about" className="about section-padding" style={{ position: 'relative', overflow: 'hidden' }}>
-            <SketchBackground color="#1B6B3A" opacity={0.05} />
+            <SketchBackground color="#1E3A8A" opacity={0.05} />
             <div className="container about-container" style={{ position: 'relative', zIndex: 1 }}>
                 <div className="about-image reveal">
-                    <img src="/gallery-exterior.jpg" alt="Jeya Hyper Store" />
+                    <img src={`${BASE}gallery-exterior.jpg`} alt="Jeya Hyper Store" />
                     <div className="experience-badge">
                         <span className="exp-number">10+</span>
                         <span className="exp-text">Years of<br />Trust</span>

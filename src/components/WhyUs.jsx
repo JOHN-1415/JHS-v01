@@ -27,7 +27,7 @@ function WhyUs() {
 
     return (
         <section className="why-us section-padding" style={{ position: 'relative', overflow: 'hidden' }}>
-            <SketchBackground color="#7DC832" opacity={0.05} />
+            <SketchBackground color="#1E3A8A" opacity={0.05} />
             <div className="container" style={{ position: 'relative', zIndex: 1 }}>
                 <div className="text-center reveal">
                     <span className="section-label">Our Strengths</span>

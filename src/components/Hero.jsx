@@ -1,18 +1,21 @@
 import React from 'react';
 import SketchBackground from './SketchBackground';
 
+const BASE = import.meta.env.BASE_URL;
+
 function Hero() {
     return (
         <section id="home" className="hero" style={{ position: 'relative', overflow: 'hidden' }}>
-            <SketchBackground color="#7DC832" opacity={0.08} />
+            <SketchBackground color="#2ECC71" opacity={0.05} />
             <div className="container hero-container" style={{ position: 'relative', zIndex: 1 }}>
                 <div className="hero-content reveal">
                     <div className="hero-badge">
-                        ⭐ Trusted Since 10+ Years · Srirangam, Trichy
+                        ⭐ 4.6 Rating · Trusted 10+ Years
                     </div>
                     <h1 className="hero-title">
-                        <span className="lime">Jeya</span><br />
-                        <span className="gold">Hyper</span> <span className="white">Store</span>
+                        <span className="white">Jeya</span><br />
+                        <span className="bright">Hyper</span><br />
+                        <span className="white">Store</span>
                     </h1>
                     <p className="hero-subtitle">Your One-Stop Shop in Trichy</p>
                     <p className="hero-desc">
@@ -34,15 +37,15 @@ function Hero() {
                     <div className="hero-stats">
                         <div className="stat-item">
                             <span className="stat-number">10+</span>
-                            <span className="stat-label">Years of Trust</span>
+                            <span className="stat-label">Years</span>
                         </div>
                         <div className="stat-item">
                             <span className="stat-number">6</span>
-                            <span className="stat-label">Departments</span>
+                            <span className="stat-label">Depts</span>
                         </div>
                         <div className="stat-item">
                             <span className="stat-number">4.6★</span>
-                            <span className="stat-label">Google Rating</span>
+                            <span className="stat-label">Rating</span>
                         </div>
                         <div className="stat-item">
                             <span className="stat-number">7AM–10PM</span>
@@ -51,7 +54,7 @@ function Hero() {
                     </div>
                 </div>
                 <div className="hero-image reveal">
-                    <img src="/gallery-exterior.jpg" alt="Jeya Hyper Store Exterior" className="main-image" />
+                    <img src={`${BASE}gallery-exterior.jpg`} alt="Jeya Hyper Store" className="hero-store-img" />
                 </div>
             </div>
         </section>

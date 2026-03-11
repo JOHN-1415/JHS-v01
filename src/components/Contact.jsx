@@ -32,7 +32,7 @@ function Contact() {
 
     return (
         <section id="contact" className="contact section-padding" style={{ position: 'relative', overflow: 'hidden' }}>
-            <SketchBackground color="#1B6B3A" opacity={0.04} />
+            <SketchBackground color="#2ECC71" opacity={0.04} />
             <div className="container" style={{ position: 'relative', zIndex: 1 }}>
                 <div className="text-center reveal">
                     <span className="section-label">Get In Touch</span>
