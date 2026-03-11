@@ -10,7 +10,7 @@ function Hero() {
             <div className="container hero-container" style={{ position: 'relative', zIndex: 1 }}>
                 <div className="hero-content reveal">
                     <div className="hero-badge">
-                        ⭐ 4.6 Rating · Trusted 10+ Years
+                        <i className="fa-solid fa-star"></i> 4.6 Rating · Trusted 10+ Years
                     </div>
                     <h1 className="hero-title">
                         <span className="white">Jeya</span><br />
@@ -23,15 +23,15 @@ function Hero() {
                     </p>
                     <div className="hero-buttons">
                         <a href="#location" className="btn btn-lime">
-                            📍 Visit Our Store <i className="fa-solid fa-arrow-right"></i>
+                            Visit Our Store <i className="fa-solid fa-arrow-right"></i>
                         </a>
                         <a
-                            href="https://wa.me/919876543210?text=Hi!%20I%20have%20a%20query%20for%20Jeya%20Hyper%20Store."
+                            href="https://wa.me/919345491984?text=Hi!%20I%20have%20a%20query%20for%20Jeya%20Hyper%20Store."
                             target="_blank"
                             rel="noreferrer"
                             className="btn btn-whatsapp"
                         >
-                            💬 Chat on WhatsApp
+                            <i className="fa-brands fa-whatsapp"></i> Chat on WhatsApp
                         </a>
                     </div>
                     <div className="hero-stats">
@@ -44,7 +44,7 @@ function Hero() {
                             <span className="stat-label">Depts</span>
                         </div>
                         <div className="stat-item">
-                            <span className="stat-number">4.6★</span>
+                            <span className="stat-number">4.6</span>
                             <span className="stat-label">Rating</span>
                         </div>
                         <div className="stat-item">

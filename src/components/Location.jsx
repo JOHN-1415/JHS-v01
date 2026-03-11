@@ -29,7 +29,7 @@ function Location() {
                         <div className="info-card">
                             <div className="info-icon"><i className="fa-solid fa-location-dot"></i></div>
                             <div className="info-text">
-                                <h4>📍 Address</h4>
+                                <h4>Address</h4>
                                 <p>Somarasampettai, Opp. Holy Cross School,<br />Vayalur Road, Srirangam — 620102</p>
                             </div>
                         </div>
@@ -37,23 +37,23 @@ function Location() {
                         <div className="info-card">
                             <div className="info-icon"><i className="fa-solid fa-phone"></i></div>
                             <div className="info-text">
-                                <h4>📞 Phone</h4>
-                                <p>+91 98765 43210</p>
+                                <h4>Phone</h4>
+                                <p>+91 93454 91984</p>
                             </div>
                         </div>
 
                         <div className="info-card">
                             <div className="info-icon"><i className="fa-brands fa-whatsapp"></i></div>
                             <div className="info-text">
-                                <h4>💬 WhatsApp</h4>
-                                <p>+91 98765 43210</p>
+                                <h4>WhatsApp</h4>
+                                <p>+91 93454 91984</p>
                             </div>
                         </div>
 
                         <div className="info-card">
                             <div className="info-icon"><i className="fa-solid fa-clock"></i></div>
                             <div className="info-text">
-                                <h4>⏰ Hours</h4>
+                                <h4>Hours</h4>
                                 <p>7:00 AM – 10:00 PM, All Days</p>
                             </div>
                         </div>
@@ -65,15 +65,15 @@ function Location() {
                                 rel="noreferrer"
                                 className="btn btn-outline-green"
                             >
-                                📍 Get Directions
+                                <i className="fa-solid fa-location-dot"></i> Get Directions
                             </a>
                             <a
-                                href="https://wa.me/919876543210?text=Hi!%20I%20want%20to%20visit%20the%20store."
+                                href="https://wa.me/919345491984?text=Hi!%20I%20want%20to%20visit%20the%20store."
                                 target="_blank"
                                 rel="noreferrer"
                                 className="btn btn-whatsapp"
                             >
-                                💬 Message on WhatsApp
+                                <i className="fa-brands fa-whatsapp"></i> Message on WhatsApp
                             </a>
                         </div>
                     </div>

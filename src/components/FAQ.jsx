@@ -16,7 +16,7 @@ const faqs = [
     },
     {
         q: 'Can I place orders on WhatsApp?',
-        a: 'Yes! Send your order or enquiry on WhatsApp at +91 98765 43210 and we\'ll reply shortly.',
+        a: 'Yes! Send your order or enquiry on WhatsApp at +91 93454 91984 and we\'ll reply shortly.',
     },
     {
         q: 'Do you offer home delivery?',
@@ -70,12 +70,12 @@ function FAQ() {
                     <div className="faq-cta">
                         <p>Still have questions? Chat with us instantly!</p>
                         <a
-                            href="https://wa.me/919876543210?text=Hi!%20I%20have%20a%20question%20about%20Jeya%20Hyper%20Store."
+                            href="https://wa.me/919345491984?text=Hi!%20I%20have%20a%20question%20about%20Jeya%20Hyper%20Store."
                             target="_blank"
                             rel="noreferrer"
                             className="btn btn-whatsapp"
                         >
-                            💬 Chat on WhatsApp
+                            <i className="fa-brands fa-whatsapp"></i> Chat on WhatsApp
                         </a>
                     </div>
                 </div>

@@ -43,15 +43,15 @@ function Contact() {
                 <div className="contact-wrapper reveal">
                     <div className="contact-left">
                         <div className="wa-quick-block">
-                            <h3>💬 Quick Contact via WhatsApp</h3>
+                            <h3><i className="fa-brands fa-whatsapp"></i> Quick Contact via WhatsApp</h3>
                             <p>Skip the form — chat with us directly for instant replies!</p>
                             <a
-                                href="https://wa.me/919876543210?text=Hi%20Jeya%20Hyper%20Store!%20I%20have%20an%20enquiry."
+                                href="https://wa.me/919345491984?text=Hi%20Jeya%20Hyper%20Store!%20I%20have%20an%20enquiry."
                                 target="_blank"
                                 rel="noreferrer"
                                 className="btn-wa-white"
                             >
-                                💬 Open WhatsApp Chat
+                                <i className="fa-brands fa-whatsapp"></i> Open WhatsApp Chat
                             </a>
                         </div>
 
@@ -60,14 +60,14 @@ function Contact() {
                                 <div className="method-icon"><i className="fa-solid fa-phone"></i></div>
                                 <div className="method-text">
                                     <h4>Phone</h4>
-                                    <a href="tel:+919876543210">+91 98765 43210</a>
+                                    <a href="tel:+919345491984">+91 93454 91984</a>
                                 </div>
                             </div>
                             <div className="method-item">
                                 <div className="method-icon"><i className="fa-brands fa-whatsapp"></i></div>
                                 <div className="method-text">
                                     <h4>WhatsApp</h4>
-                                    <a href="https://wa.me/919876543210" target="_blank" rel="noreferrer">+91 98765 43210</a>
+                                    <a href="https://wa.me/919345491984" target="_blank" rel="noreferrer">+91 93454 91984</a>
                                 </div>
                             </div>
                             <div className="method-item">

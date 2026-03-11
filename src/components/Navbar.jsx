@@ -54,13 +54,13 @@ function Navbar({ setCurrentPage }) {
                     <a href="#location" className="nav-link" onClick={closeMenu}>Location</a>
                     <a href="#contact" className="nav-link" onClick={closeMenu}>Contact</a>
                     <a
-                        href="https://wa.me/919876543210?text=Hi!%20I%20want%20to%20place%20an%20order%20at%20Jeya%20Hyper%20Store."
+                        href="https://wa.me/919345491984?text=Hi!%20I%20want%20to%20place%20an%20order%20at%20Jeya%20Hyper%20Store."
                         target="_blank"
                         rel="noreferrer"
                         className="nav-link btn-wa-nav"
                         onClick={closeMenu}
                     >
-                        💬 Order on WhatsApp
+                        <i className="fa-brands fa-whatsapp"></i> Order on WhatsApp
                     </a>
                 </nav>
             </div>

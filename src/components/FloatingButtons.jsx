@@ -26,7 +26,7 @@ function FloatingButtons() {
             </button>
 
             <a
-                href="https://wa.me/919876543210?text=Hi!%20I%20have%20a%20query%20for%20Jeya%20Hyper%20Store."
+                href="https://wa.me/919345491984?text=Hi!%20I%20have%20a%20query%20for%20Jeya%20Hyper%20Store."
                 target="_blank"
                 rel="noreferrer"
                 className="floating-whatsapp"

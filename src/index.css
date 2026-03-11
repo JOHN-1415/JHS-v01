@@ -35,6 +35,7 @@
     /* ── Typography ── */
     --font-heading: 'Syne', sans-serif;
     --font-body: 'DM Sans', sans-serif;
+    --font-classy: 'Playfair Display', Georgia, serif;
 
     /* ── Styling ── */
     --radius-sm: 8px;
@@ -484,11 +485,13 @@ h3, h4, h5, h6 {
 }
 
 .hero-title {
+    font-family: var(--font-classy);
     font-size: 3.8rem;
-    font-weight: 800;
+    font-weight: 900;
     line-height: 1.05;
     margin-bottom: 0.75rem;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.02em;
+    font-style: italic;
 }
 
 .hero-title .bright {
@@ -550,12 +553,13 @@ h3, h4, h5, h6 {
 }
 
 .stat-number {
-    font-family: var(--font-heading);
+    font-family: var(--font-classy);
     font-size: 2.2rem;
     font-weight: 800;
     color: var(--bright-green);
     letter-spacing: -0.01em;
     line-height: 1.1;
+    font-style: italic;
 }
 
 .stat-label {
@@ -756,36 +760,15 @@ h3, h4, h5, h6 {
 }
 
 .service-card-badge {
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    background: #2ECC71;
-    color: #062818;
-    font-size: 0.72rem;
-    font-weight: 700;
-    border-radius: 50px;
-    padding: 4px 10px;
-    z-index: 2;
+    display: none;
 }
 
 .service-card-title {
-    font-family: 'Syne', sans-serif;
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: white;
-    margin-bottom: 6px;
+    display: none;
 }
 
 .service-card-desc {
-    font-size: 0.83rem;
-    color: rgba(255, 255, 255, 0.6);
-    line-height: 1.6;
-    margin-bottom: 14px;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+    display: none;
 }
 
 .service-card-link {

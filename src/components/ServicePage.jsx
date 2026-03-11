@@ -1,7 +1,7 @@
 import React from 'react';
 import SketchBackground from './SketchBackground';
 
-const WA_BASE = 'https://wa.me/919876543210';
+const WA_BASE = 'https://wa.me/919345491984';
 const BASE = import.meta.env.BASE_URL;
 
 const ALL_PRODUCTS = {
@@ -88,7 +88,7 @@ function ServicePage({ deptId, onBack }) {
 
                     <div className="breadcrumb">
                         <span className="breadcrumb-home" onClick={onBack}>Home</span>
-                        <span> › </span>
+                        <span> / </span>
                         <span>{dept.label}</span>
                     </div>
 
@@ -103,7 +103,7 @@ function ServicePage({ deptId, onBack }) {
                         rel="noreferrer"
                         className="btn btn-whatsapp"
                     >
-                        💬 Order {dept.label} on WhatsApp
+                        <i className="fa-brands fa-whatsapp"></i> Order {dept.label} on WhatsApp
                     </a>
                 </div>
             </div>
@@ -124,9 +124,8 @@ function ServicePage({ deptId, onBack }) {
                             <span className="placeholder-name">{item.name}</span>
                         </div>
                         <div className="service-product-card-body">
-                            <p className="service-product-card-name">{item.name}</p>
                             <a
-                                href={`https://wa.me/919876543210?text=${encodeURIComponent(`Hi! I want to enquire about ${item.name} from Jeya Hyper Store.`)}`}
+                                href={`https://wa.me/919345491984?text=${encodeURIComponent(`Hi! I want to enquire about ${item.name} from Jeya Hyper Store.`)}`}
                                 target="_blank"
                                 rel="noreferrer"
                                 className="service-product-enquire"

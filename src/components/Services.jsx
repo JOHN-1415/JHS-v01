@@ -10,42 +10,36 @@ const SERVICES = [
         label: "Groceries",
         coverImg: `${BASE}gallery-groceries.jpg`,
         desc: "Rice, dals, spices, oils and all your daily kitchen essentials.",
-        productCount: 5,
     },
     {
         id: "shoes",
         label: "School Shoes",
         coverImg: `${BASE}gallery-shoes.jpg`,
         desc: "Canvas, leather and sports shoes for children from KG to Class 12.",
-        productCount: 3,
     },
     {
         id: "gifts",
         label: "Gifts",
         coverImg: `${BASE}gallery-gifts.jpg`,
         desc: "Gift hampers, greeting cards, seasonal gifts and wrapping supplies.",
-        productCount: 4,
     },
     {
         id: "toys",
         label: "Toys",
-        coverImg: `${BASE}gallery-stationary.jpg`,
+        coverImg: `${BASE}cat-toys-1.jpg`,
         desc: "Stuffed toys, board games, car toys and educational play items.",
-        productCount: 3,
     },
     {
         id: "jewels",
         label: "Jewels",
         coverImg: `${BASE}gallery-jewels.jpg`,
         desc: "Gold-plated sets, bangles, earrings, necklaces and chains.",
-        productCount: 2,
     },
     {
         id: "stationary",
         label: "Stationeries",
         coverImg: `${BASE}gallery-stationary.jpg`,
         desc: "Notebooks, pens, geometry boxes, art supplies and school bags.",
-        productCount: 4,
     },
 ];
 

@@ -24,7 +24,7 @@ function Footer({ setCurrentPage }) {
                         <a href="#" className="social-icon" aria-label="Facebook"><i className="fa-brands fa-facebook-f"></i></a>
                         <a href="#" className="social-icon" aria-label="Instagram"><i className="fa-brands fa-instagram"></i></a>
                         <a
-                            href="https://wa.me/919876543210?text=Hi%20Jeya%20Hyper%20Store!"
+                            href="https://wa.me/919345491984?text=Hi%20Jeya%20Hyper%20Store!"
                             target="_blank"
                             rel="noreferrer"
                             className="social-icon"
@@ -51,18 +51,18 @@ function Footer({ setCurrentPage }) {
                 <div className="footer-col">
                     <h4 className="footer-heading">Departments</h4>
                     <ul className="footer-dept-list">
-                        <li>🛒 Groceries</li>
-                        <li>👟 School Shoes</li>
-                        <li>🎁 Gifts</li>
-                        <li>🧸 Toys</li>
-                        <li>💍 Jewels</li>
-                        <li>📚 Stationeries</li>
+                        <li>Groceries</li>
+                        <li>School Shoes</li>
+                        <li>Gifts</li>
+                        <li>Toys</li>
+                        <li>Jewels</li>
+                        <li>Stationeries</li>
                     </ul>
                 </div>
             </div>
             <div className="footer-bottom" style={{ position: 'relative', zIndex: 1 }}>
                 <p>&copy; 2026 Jeya Hyper Store, Srirangam, Trichy. All rights reserved.</p>
-                <span>Made with ❤️ in Tamil Nadu</span>
+                <span>Made with care in Tamil Nadu</span>
             </div>
         </footer>
     );
