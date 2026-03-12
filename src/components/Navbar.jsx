@@ -39,13 +39,20 @@ function Navbar({ setCurrentPage }) {
                 </div>
 
                 <div className="hamburger" onClick={toggleMenu}>
-                    <i className={`fa-solid ${isMobileMenuOpen ? 'fa-times' : 'fa-bars'}`}></i>
+                    <i className="fa-solid fa-bars"></i>
                 </div>
 
                 <nav className={`nav-menu ${isMobileMenuOpen ? 'active' : ''}`}>
+                    {isMobileMenuOpen && (
+                        <div className="mobile-close-btn" onClick={closeMenu}>
+                            <i className="fa-solid fa-times"></i>
+                        </div>
+                    )}
                     <a href="#home" className="nav-link" onClick={goHome}>Home</a>
                     <a href="#about" className="nav-link" onClick={closeMenu}>About</a>
+                    <a href="#why-us" className="nav-link" onClick={closeMenu}>Strengths</a>
                     <span className="nav-link" onClick={goServices}>Services</span>
+                    <a href="#gallery" className="nav-link" onClick={closeMenu}>Gallery</a>
                     <a href="#testimonials" className="nav-link" onClick={closeMenu}>Testimonials</a>
                     <a href="#faq" className="nav-link" onClick={closeMenu}>FAQ</a>
                     <a href="#location" className="nav-link" onClick={closeMenu}>Location</a>

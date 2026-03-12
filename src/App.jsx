@@ -14,6 +14,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import FloatingButtons from './components/FloatingButtons';
 import ServicePage from './components/ServicePage';
+import HashTags from './components/HashTags';
 
 function App() {
     const [currentPage, setCurrentPage] = useState('home');
@@ -37,6 +38,25 @@ function App() {
 
         return () => window.removeEventListener('scroll', revealOnScroll);
     }, []);
+
+    // Handle browser back button
+    useEffect(() => {
+        const handlePopstate = (event) => {
+            if (currentPage !== 'home') {
+                setCurrentPage('home');
+                window.scrollTo(0, 0);
+            }
+        };
+
+        window.addEventListener('popstate', handlePopstate);
+        
+        // Push state when changing to a subpage to enable back button
+        if (currentPage !== 'home') {
+            window.history.pushState({ page: currentPage }, '');
+        }
+
+        return () => window.removeEventListener('popstate', handlePopstate);
+    }, [currentPage]);
 
     // Re-trigger reveal on page change
     useEffect(() => {
@@ -76,6 +96,7 @@ function App() {
                     }}
                 />
             )}
+            {currentPage === 'home' && <HashTags setCurrentPage={setCurrentPage} />}
             <Footer setCurrentPage={setCurrentPage} />
             <FloatingButtons />
         </div>

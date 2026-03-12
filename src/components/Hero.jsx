@@ -49,13 +49,11 @@ function Hero() {
             <div className="container hero-container" style={{ position: 'relative', zIndex: 2 }}>
                 <div className="hero-content reveal">
                     <div className="hero-badge">
-                        <i className="fa-solid fa-star"></i> 4.6 Rating · Trusted 10+ Years
+                        <i className="fa-solid fa-star"></i> 4.6 Rating · 4+ Trusted Years
                     </div>
-                    <h1 className="hero-title">
-                        <span className="white">Jeya</span><br />
-                        <span className="gold">Hyper</span><br />
-                        <span className="white">Store</span>
-                    </h1>
+                    <div className="hero-logo-container">
+                        <img src={`${BASE}logo.png`} alt="Jeya Hyper Store" className="hero-logo-img" />
+                    </div>
                     <p className="hero-subtitle">Your One-Stop Shop in Trichy</p>
                     <p className="hero-desc">
                         From fresh groceries to school shoes, gifts, toys, jewels and stationeries — everything your family needs, all under one roof in Srirangam.
@@ -75,8 +73,8 @@ function Hero() {
                     </div>
                     <div className="hero-stats">
                         <div className="stat-item">
-                            <span className="stat-number">10+</span>
-                            <span className="stat-label">Years</span>
+                            <span className="stat-number">4+</span>
+                            <span className="stat-label">Trusted</span>
                         </div>
                         <div className="stat-item">
                             <span className="stat-number">6</span>
@@ -87,7 +85,7 @@ function Hero() {
                             <span className="stat-label">Rating</span>
                         </div>
                         <div className="stat-item">
-                            <span className="stat-number">7AM–10PM</span>
+                            <span className="stat-number">8AM–10PM</span>
                             <span className="stat-label">Open Daily</span>
                         </div>
                     </div>

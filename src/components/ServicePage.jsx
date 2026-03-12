@@ -10,11 +10,11 @@ const ALL_PRODUCTS = {
         desc: "From everyday staples to premium spices — all your kitchen needs in one place.",
         waMsg: "Hi! I want to order Groceries from Jeya Hyper Store.",
         items: [
-            { name: "Grains & Cereals",   img: `${BASE}cat-groceries-1.jpg` },
-            { name: "Masala & Spices",    img: `${BASE}cat-groceries-2.jpg` },
-            { name: "Snacks & Instant",   img: `${BASE}cat-groceries-3.jpg` },
-            { name: "Packaged Foods",     img: `${BASE}cat-groceries-4.jpg` },
-            { name: "Beverages & Drinks", img: `${BASE}cat-groceries-5.jpg` },
+            { name: "Pulses and Dry Grains",   img: `${BASE}cat-groceries-1.jpg` },
+            { name: "Packaged Grocery Essentials",    img: `${BASE}cat-groceries-2.jpg` },
+            { name: "Instant Foods & Snacks Section",   img: `${BASE}cat-groceries-3.jpg` },
+            { name: "Spices and Masala Collection",     img: `${BASE}cat-groceries-4.jpg` },
+            { name: "Snacks and Confectionery Items", img: `${BASE}cat-groceries-5.jpg` },
         ],
     },
     shoes: {
@@ -22,9 +22,9 @@ const ALL_PRODUCTS = {
         desc: "Durable school shoes for children from KG to Class 12, in all sizes.",
         waMsg: "Hi! I want to enquire about Shoes at Jeya Hyper Store.",
         items: [
-            { name: "Black School Shoes", img: `${BASE}cat-shoes-1.jpg` },
-            { name: "White Sports Shoes", img: `${BASE}cat-shoes-2.jpg` },
-            { name: "Canvas Shoes",       img: `${BASE}cat-shoes-3.jpg` },
+            { name: "School Shoes Collection", img: `${BASE}cat-shoes-1.jpg` },
+            { name: "Black School Shoes", img: `${BASE}cat-shoes-2.jpg` },
+            { name: "White School Shoes",       img: `${BASE}cat-shoes-3.jpg` },
         ],
     },
     gifts: {
@@ -32,10 +32,10 @@ const ALL_PRODUCTS = {
         desc: "Beautiful gift hampers, seasonal gifts and wrapping — perfect for any occasion.",
         waMsg: "Hi! I am looking for Gift items at Jeya Hyper Store.",
         items: [
-            { name: "Gift Items",         img: `${BASE}cat-gifts-1.jpg` },
-            { name: "Decorative Gifts",   img: `${BASE}cat-gifts-2.jpg` },
-            { name: "Gift Sets",          img: `${BASE}cat-gifts-3.jpg` },
-            { name: "Seasonal Gifts",     img: `${BASE}cat-gifts-4.jpg` },
+            { name: "Gift Box Decoration",         img: `${BASE}cat-gifts-1.jpg` },
+            { name: "Assorted Gift & Decorative Items Collection",   img: `${BASE}cat-gifts-2.jpg` },
+            { name: "Couple Figurine Gift Frames",          img: `${BASE}cat-gifts-3.jpg` },
+            { name: "Wall Clock Collection",     img: `${BASE}cat-gifts-4.jpg` },
         ],
     },
     toys: {
@@ -43,9 +43,9 @@ const ALL_PRODUCTS = {
         desc: "Educational toys, board games and outdoor play items for all ages.",
         waMsg: "Hi! I want to enquire about Toys at Jeya Hyper Store.",
         items: [
-            { name: "Soft Toys",          img: `${BASE}cat-toys-1.jpg` },
-            { name: "Stuffed Animals",    img: `${BASE}cat-toys-2.jpg` },
-            { name: "Kids Toys",          img: `${BASE}cat-toys-3.jpg` },
+            { name: "Toys and Teddy Bear Collection",          img: `${BASE}cat-toys-1.jpg` },
+            { name: "Kids Toys",          img: `${BASE}cat-toys-2.jpg` },
+            { name: "Decorative Teddy Bear Gift Set",          img: `${BASE}cat-toys-3.jpg` },
         ],
     },
     jewels: {
@@ -53,8 +53,8 @@ const ALL_PRODUCTS = {
         desc: "Elegant imitation jewellery, gold-plated sets, bangles and earrings.",
         waMsg: "Hi! I am interested in Jewellery items at Jeya Hyper Store.",
         items: [
-            { name: "Gold Necklaces",     img: `${BASE}cat-jewels-1.jpg` },
-            { name: "Jewellery Sets",     img: `${BASE}cat-jewels-2.jpg` },
+            { name: "Traditional Necklace Collection",     img: `${BASE}cat-jewels-1.jpg` },
+            { name: "Jewellery Display Set",     img: `${BASE}cat-jewels-2.jpg` },
         ],
     },
     stationary: {
@@ -62,10 +62,11 @@ const ALL_PRODUCTS = {
         desc: "Everything students need — notebooks, pens, geometry boxes and art supplies.",
         waMsg: "Hi! I need Stationery items from Jeya Hyper Store.",
         items: [
-            { name: "Household Cleaning products", img: `${BASE}cat-stationary-1.jpg` },
-            { name: "Napkins and Wet wibes",      img: `${BASE}cat-stationary-2.jpg` },
-            { name: "Dish washers and Liquids",    img: `${BASE}cat-stationary-3.jpg` },
-            { name: "Art supplies",                img: `${BASE}cat-stationary-4.jpg` },
+            { name: "Bathroom & Toilet Cleaning Products", img: `${BASE}cat-stationary-1.jpg` },
+            { name: "Pet Food and Pet Care Supplies",      img: `${BASE}cat-stationary-2.jpg` },
+            { name: "Home Care and Daily Essentials Section",    img: `${BASE}cat-stationary-3.jpg` },
+            { name: "Birthday and Party Decoration Items",                img: `${BASE}cat-stationary-4.jpg` },
+            { name: "School Stationery",                                   img: `${BASE}cat-stationary-5.jpg` },
         ],
     },
 };

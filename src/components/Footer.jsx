@@ -21,8 +21,8 @@ function Footer({ setCurrentPage }) {
                         Your trusted neighbourhood store in Srirangam, Trichy. Quality products, honest prices, and warm service — all under one roof.
                     </p>
                     <div className="social-links">
-                        <a href="#" className="social-icon" aria-label="Facebook"><i className="fa-brands fa-facebook-f"></i></a>
-                        <a href="#" className="social-icon" aria-label="Instagram"><i className="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61569404496169" target="_blank" rel="noreferrer" className="social-icon" aria-label="Facebook"><i className="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/jeyahyperstore?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noreferrer" className="social-icon" aria-label="Instagram"><i className="fa-brands fa-instagram"></i></a>
                         <a
                             href="https://wa.me/919345491984?text=Hi%20Jeya%20Hyper%20Store!"
                             target="_blank"
@@ -51,18 +51,18 @@ function Footer({ setCurrentPage }) {
                 <div className="footer-col">
                     <h4 className="footer-heading">Departments</h4>
                     <ul className="footer-dept-list">
-                        <li>Groceries</li>
-                        <li>Shoes</li>
-                        <li>Gifts</li>
-                        <li>Toys</li>
-                        <li>Jewels</li>
-                        <li>Stationeries</li>
+                        <li onClick={() => { setCurrentPage('groceries'); window.scrollTo(0,0); }} style={{ cursor: 'pointer' }}>Groceries</li>
+                        <li onClick={() => { setCurrentPage('shoes'); window.scrollTo(0,0); }} style={{ cursor: 'pointer' }}>Shoes</li>
+                        <li onClick={() => { setCurrentPage('gifts'); window.scrollTo(0,0); }} style={{ cursor: 'pointer' }}>Gifts</li>
+                        <li onClick={() => { setCurrentPage('toys'); window.scrollTo(0,0); }} style={{ cursor: 'pointer' }}>Toys</li>
+                        <li onClick={() => { setCurrentPage('jewels'); window.scrollTo(0,0); }} style={{ cursor: 'pointer' }}>Jewels</li>
+                        <li onClick={() => { setCurrentPage('stationary'); window.scrollTo(0,0); }} style={{ cursor: 'pointer' }}>Stationeries</li>
                     </ul>
                 </div>
             </div>
             <div className="footer-bottom" style={{ position: 'relative', zIndex: 1 }}>
                 <p>&copy; 2026 Jeya Hyper Store, Srirangam, Trichy. All rights reserved.</p>
-                <span>Made with care in Tamil Nadu</span>
+                <span>Website by <a href="https://javia.studio/" target="_blank" rel="noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>jAvia</a></span>
             </div>
         </footer>
     );
