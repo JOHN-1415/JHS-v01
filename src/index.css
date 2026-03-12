@@ -237,25 +237,25 @@ h3, h4, h5, h6 {
 }
 
 .btn-primary {
-    background: var(--royal-blue);
+    background: var(--gold);
     color: var(--navy-dark);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .btn-primary:hover {
-    box-shadow: 0 6px 20px rgba(46, 204, 113, 0.5);
-    background: #3ddc84;
+    box-shadow: 0 6px 20px rgba(245, 197, 24, 0.4);
+    background: #f7d452;
 }
 
 .btn-lime {
-    background: var(--royal-blue);
+    background: var(--gold);
     color: var(--navy-dark);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .btn-lime:hover {
-    box-shadow: 0 6px 20px rgba(46, 204, 113, 0.5);
-    background: #3ddc84;
+    box-shadow: 0 6px 20px rgba(245, 197, 24, 0.4);
+    background: #f7d452;
 }
 
 .btn-whatsapp {
@@ -1279,7 +1279,7 @@ h3, h4, h5, h6 {
 
 .review-gmap-link {
     font-size: 0.72rem;
-    color: var(--royal-blue);
+    color: var(--gold);
     text-decoration: none;
     font-weight: 600;
     display: inline-flex;
@@ -1300,7 +1300,7 @@ h3, h4, h5, h6 {
     gap: 6px;
     margin-top: 14px;
     font-size: 0.78rem;
-    color: var(--royal-blue);
+    color: var(--gold);
     font-weight: 600;
     transition: var(--trans-fast);
 }
