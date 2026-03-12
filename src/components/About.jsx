@@ -11,7 +11,7 @@ function About() {
                 <div className="about-image reveal">
                     <img src={`${BASE}gallery-exterior.jpg`} alt="Jeya Hyper Store" />
                     <div className="experience-badge">
-                        <span className="exp-number">10+</span>
+                        <span className="exp-number">4+</span>
                         <span className="exp-text">Years of<br />Trust</span>
                     </div>
                 </div>
@@ -20,7 +20,7 @@ function About() {
                     <h2 className="section-title">A Store Built on Trust & Value</h2>
                     <div className="about-text">
                         <p>
-                            <strong>Jeya Hyper Store</strong> has been serving the families of Srirangam, Trichy for over a decade. Located in the heart of Somarasampettai, we bring you quality products across 6 departments — all at honest, everyday prices.
+                            <strong>Jeya Hyper Store</strong> has been serving the families of Srirangam, Trichy for over 4 years. Located in the heart of Somarasampettai, we bring you quality products across 6 departments — all at honest, everyday prices.
                         </p>
                     </div>
 
