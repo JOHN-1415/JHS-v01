@@ -11,11 +11,11 @@ function Footer({ setCurrentPage }) {
 
     return (
         <footer className="footer" style={{ position: 'relative', overflow: 'hidden' }}>
-            <SketchBackground color="#2ECC71" opacity={0.03} />
+            <SketchBackground color="#1E3A8A" opacity={0.02} />
             <div className="container footer-container" style={{ position: 'relative', zIndex: 1 }}>
                 <div className="footer-col">
                     <span className="footer-logo" onClick={goHome} style={{ cursor: 'pointer' }}>
-                        <span className="lime">Jeya</span> <span className="gold">Hyper</span> Store
+                        <span className="white">Jeya</span> <span className="gold">Hyper</span> Store
                     </span>
                     <p className="footer-desc">
                         Your trusted neighbourhood store in Srirangam, Trichy. Quality products, honest prices, and warm service — all under one roof.

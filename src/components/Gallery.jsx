@@ -4,7 +4,8 @@ import SketchBackground from './SketchBackground';
 const BASE = import.meta.env.BASE_URL;
 
 const galleryItems = [
-    { src: `${BASE}gallery-groceries.jpg`, caption: 'Fresh Grocery Section', featured: true },
+    { src: `${BASE}gallery-exterior.jpg`, caption: 'Store Front Exterior', featured: true },
+    { src: `${BASE}gallery-groceries.jpg`, caption: 'Fresh Grocery Section', featured: false },
     { src: `${BASE}gallery-shoes.jpg`, caption: 'School Shoes Corner', featured: false },
     { src: `${BASE}gallery-gifts.jpg`, caption: 'Gifts & Toys Aisle', featured: false },
     { src: `${BASE}gallery-jewels.jpg`, caption: 'Jewellery Collection', featured: false },

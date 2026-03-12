@@ -32,7 +32,7 @@ function Contact() {
 
     return (
         <section id="contact" className="contact section-padding" style={{ position: 'relative', overflow: 'hidden' }}>
-            <SketchBackground color="#2ECC71" opacity={0.04} />
+            <SketchBackground color="#1E3A8A" opacity={0.02} />
             <div className="container" style={{ position: 'relative', zIndex: 1 }}>
                 <div className="text-center reveal">
                     <span className="section-label">Get In Touch</span>
@@ -102,7 +102,7 @@ function Contact() {
                                 <label htmlFor="message">Message</label>
                                 <textarea id="message" name="message" rows="4" placeholder="How can we help you?" required></textarea>
                             </div>
-                            <button type="submit" className="btn btn-forest btn-block" disabled={formStatus === 'sending'}>
+                            <button type="submit" className="btn btn-primary btn-block" disabled={formStatus === 'sending'}>
                                 {formStatus === 'sending' && <><i className="fa-solid fa-spinner fa-spin"></i> Sending...</>}
                                 {formStatus === 'sent' && <><i className="fa-solid fa-check"></i> Message Sent!</>}
                                 {formStatus === 'idle' && <>Send Message <i className="fa-solid fa-paper-plane"></i></>}

@@ -45,7 +45,7 @@ function Hero() {
             </div>
             {/* Dark overlay for readability */}
             <div className="hero-overlay"></div>
-            <SketchBackground color="#2ECC71" opacity={0.05} />
+            <SketchBackground color="#1E3A8A" opacity={0.03} />
             <div className="container hero-container" style={{ position: 'relative', zIndex: 2 }}>
                 <div className="hero-content reveal">
                     <div className="hero-badge">
@@ -53,7 +53,7 @@ function Hero() {
                     </div>
                     <h1 className="hero-title">
                         <span className="white">Jeya</span><br />
-                        <span className="bright">Hyper</span><br />
+                        <span className="gold">Hyper</span><br />
                         <span className="white">Store</span>
                     </h1>
                     <p className="hero-subtitle">Your One-Stop Shop in Trichy</p>

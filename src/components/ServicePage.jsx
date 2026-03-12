@@ -80,7 +80,7 @@ function ServicePage({ deptId, onBack }) {
         <div>
             {/* Header Banner */}
             <div className="service-page-header" style={{ position: 'relative', overflow: 'hidden' }}>
-                <SketchBackground color="#2ECC71" opacity={0.04} />
+                <SketchBackground color="#1E3A8A" opacity={0.03} />
                 <div style={{ position: 'relative', zIndex: 1 }}>
                     <button className="back-link" onClick={onBack}>
                         <i className="fa-solid fa-arrow-left"></i> Back to Home
