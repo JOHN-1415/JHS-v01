@@ -62,10 +62,10 @@ const ALL_PRODUCTS = {
         desc: "Everything students need — notebooks, pens, geometry boxes and art supplies.",
         waMsg: "Hi! I need Stationery items from Jeya Hyper Store.",
         items: [
-            { name: "Notebooks",          img: `${BASE}cat-stationary-1.jpg` },
-            { name: "Pens & Pencils",     img: `${BASE}cat-stationary-2.jpg` },
-            { name: "Art Supplies",       img: `${BASE}cat-stationary-3.jpg` },
-            { name: "Geometry Sets",      img: `${BASE}cat-stationary-4.jpg` },
+            { name: "Household Cleaning products", img: `${BASE}cat-stationary-1.jpg` },
+            { name: "Napkins and Wet wibes",      img: `${BASE}cat-stationary-2.jpg` },
+            { name: "Dish washers and Liquids",    img: `${BASE}cat-stationary-3.jpg` },
+            { name: "Art supplies",                img: `${BASE}cat-stationary-4.jpg` },
         ],
     },
 };

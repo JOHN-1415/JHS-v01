@@ -556,6 +556,10 @@ h3, h4, h5, h6 {
     color: var(--royal-blue);
 }
 
+.hero-title .gold {
+    color: var(--gold);
+}
+
 .hero-title .white {
     color: var(--white);
 }
@@ -612,7 +616,7 @@ h3, h4, h5, h6 {
     font-family: var(--font-classy);
     font-size: 2.2rem;
     font-weight: 800;
-    color: var(--royal-blue);
+    color: var(--white);
     letter-spacing: -0.01em;
     line-height: 1.1;
     font-style: italic;
