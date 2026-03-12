@@ -1496,6 +1496,7 @@ h3, h4, h5, h6 {
     background: linear-gradient(135deg, #062818 0%, #0D5C32 100%);
     position: relative;
     overflow: hidden;
+    z-index: 1;
 }
 
 .contact::after {
@@ -1522,6 +1523,7 @@ h3, h4, h5, h6 {
     padding: 28px;
     color: var(--white);
     margin-bottom: 18px;
+    box-shadow: none !important;
 }
 
 .wa-quick-block h3 {
