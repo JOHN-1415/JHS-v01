@@ -26,7 +26,7 @@ function Gallery() {
                     {galleryItems.map((item, i) => (
                         <div key={i} className={`gallery-item${item.featured ? ' gallery-featured' : ''}`}>
                             <img src={item.src} alt={item.caption} />
-                            <div className="gallery-overlay">
+                            <div className="gallery-info">
                                 <span>{item.caption}</span>
                             </div>
                         </div>

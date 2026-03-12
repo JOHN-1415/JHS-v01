@@ -15,7 +15,6 @@ const ALL_PRODUCTS = {
             { name: "Snacks & Instant",   img: `${BASE}cat-groceries-3.jpg` },
             { name: "Packaged Foods",     img: `${BASE}cat-groceries-4.jpg` },
             { name: "Beverages & Drinks", img: `${BASE}cat-groceries-5.jpg` },
-            { name: "Essentials",         img: `${BASE}cat-groceries-6.jpg` },
         ],
     },
     shoes: {
@@ -26,9 +25,6 @@ const ALL_PRODUCTS = {
             { name: "Black School Shoes", img: `${BASE}cat-shoes-1.jpg` },
             { name: "White Sports Shoes", img: `${BASE}cat-shoes-2.jpg` },
             { name: "Canvas Shoes",       img: `${BASE}cat-shoes-3.jpg` },
-            { name: "Boys Sizes",         img: `${BASE}cat-shoes-4.jpg` },
-            { name: "Girls Sizes",        img: `${BASE}cat-shoes-5.jpg` },
-            { name: "All Sizes",          img: `${BASE}cat-shoes-6.jpg` },
         ],
     },
     gifts: {
@@ -40,8 +36,6 @@ const ALL_PRODUCTS = {
             { name: "Decorative Gifts",   img: `${BASE}cat-gifts-2.jpg` },
             { name: "Gift Sets",          img: `${BASE}cat-gifts-3.jpg` },
             { name: "Seasonal Gifts",     img: `${BASE}cat-gifts-4.jpg` },
-            { name: "Gift Hampers",       img: `${BASE}cat-gifts-5.jpg` },
-            { name: "Special Occasions",  img: `${BASE}cat-gifts-6.jpg` },
         ],
     },
     toys: {
@@ -52,9 +46,6 @@ const ALL_PRODUCTS = {
             { name: "Soft Toys",          img: `${BASE}cat-toys-1.jpg` },
             { name: "Stuffed Animals",    img: `${BASE}cat-toys-2.jpg` },
             { name: "Kids Toys",          img: `${BASE}cat-toys-3.jpg` },
-            { name: "Board Games",        img: `${BASE}cat-toys-4.jpg` },
-            { name: "Outdoor Toys",       img: `${BASE}cat-toys-5.jpg` },
-            { name: "Educational Toys",   img: `${BASE}cat-toys-6.jpg` },
         ],
     },
     jewels: {
@@ -64,10 +55,6 @@ const ALL_PRODUCTS = {
         items: [
             { name: "Gold Necklaces",     img: `${BASE}cat-jewels-1.jpg` },
             { name: "Jewellery Sets",     img: `${BASE}cat-jewels-2.jpg` },
-            { name: "Bangles",            img: `${BASE}cat-jewels-3.jpg` },
-            { name: "Earrings",           img: `${BASE}cat-jewels-4.jpg` },
-            { name: "Chains",             img: `${BASE}cat-jewels-5.jpg` },
-            { name: "Rings",              img: `${BASE}cat-jewels-6.jpg` },
         ],
     },
     stationary: {
@@ -79,8 +66,6 @@ const ALL_PRODUCTS = {
             { name: "Pens & Pencils",     img: `${BASE}cat-stationary-2.jpg` },
             { name: "Art Supplies",       img: `${BASE}cat-stationary-3.jpg` },
             { name: "Geometry Sets",      img: `${BASE}cat-stationary-4.jpg` },
-            { name: "Craft Items",        img: `${BASE}cat-stationary-5.jpg` },
-            { name: "Writing Tools",      img: `${BASE}cat-stationary-6.jpg` },
         ],
     },
 };
@@ -139,6 +124,7 @@ function ServicePage({ deptId, onBack }) {
                             <span className="placeholder-name">{item.name}</span>
                         </div>
                         <div className="service-product-card-body">
+                            <h4 className="service-product-card-name">{item.name}</h4>
                             <a
                                 href={`https://wa.me/919345491984?text=${encodeURIComponent(`Hi! I want to enquire about ${item.name} from Jeya Hyper Store.`)}`}
                                 target="_blank"
