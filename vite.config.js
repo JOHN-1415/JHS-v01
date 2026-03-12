@@ -6,3 +6,4 @@ export default defineConfig({
     base: '/JHS-v01/',
     plugins: [react()],
 })
+// Trigger build to verify GitHub Actions deployment
