@@ -8,32 +8,40 @@ const slideshowImages = [
     'gallery-groceries.jpg',
     'gallery-jewels.jpg',
     'gallery-shoes.jpg',
-    'gallery-gifts.jpg',
-    'gallery-stationary.jpg',
+    'cat-gifts-3.jpg',
+    'cat-stationary-3.jpg',
 ];
 
 function Hero() {
     const [activeSlide, setActiveSlide] = useState(0);
+    const [prevSlide, setPrevSlide] = useState(-1);
 
     useEffect(() => {
         const timer = setInterval(() => {
+            setPrevSlide(activeSlide);
             setActiveSlide((prev) => (prev + 1) % slideshowImages.length);
         }, 5000);
         return () => clearInterval(timer);
-    }, []);
+    }, [activeSlide]);
 
     return (
         <section id="home" className="hero" style={{ position: 'relative', overflow: 'hidden' }}>
             {/* Background slideshow */}
             <div className="hero-slideshow">
-                {slideshowImages.map((img, i) => (
-                    <img
-                        key={img}
-                        src={`${BASE}${img}`}
-                        alt=""
-                        className={`hero-slide${i === activeSlide ? ' active' : ''}`}
-                    />
-                ))}
+                {slideshowImages.map((img, i) => {
+                    let slideClass = 'hero-slide';
+                    if (i === activeSlide) slideClass += ' active slide-enter';
+                    if (i === prevSlide) slideClass += ' active slide-exit';
+                    
+                    return (
+                        <img
+                            key={img}
+                            src={`${BASE}${img}`}
+                            alt=""
+                            className={slideClass}
+                        />
+                    );
+                })}
             </div>
             {/* Dark overlay for readability */}
             <div className="hero-overlay"></div>

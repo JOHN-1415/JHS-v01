@@ -45,11 +45,11 @@ function About() {
 
                     <div className="vision-mission">
                         <div className="vm-card vision">
-                            <h4>🎯 Our Vision</h4>
+                            <h4>Our Vision</h4>
                             <p>To be the most trusted neighbourhood store in Trichy — where every family finds everything they need, at prices they can afford.</p>
                         </div>
                         <div className="vm-card mission">
-                            <h4>🚀 Our Mission</h4>
+                            <h4>Our Mission</h4>
                             <p>To offer a wide range of quality products — from daily groceries to school essentials, gifts, toys, jewellery and stationery — with warm service, honest pricing, and a shopping experience that feels like home.</p>
                         </div>
                     </div>

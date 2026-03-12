@@ -16,7 +16,7 @@ const REVIEWS = [
         initial: 'U',
         rating: 5,
         meta: 'Google Review · 5 reviews · 1 photo',
-        text: 'I have purchased for the past 2 years. All home needed products are available there — and they also provide loyalty points according to our purchase amount, which is very useful and attractive. I love that system 😍 Please visit here for your home needs!',
+        text: 'I have purchased for the past 2 years. All home needed products are available there — and they also provide loyalty points according to our purchase amount, which is very useful and attractive. I love that system! Please visit here for your home needs!',
         reviewLink: 'https://www.google.com/maps/contrib/110925743305491292039/reviews?hl=en',
         borderClass: 'border-gold',
     },
@@ -62,7 +62,7 @@ function Testimonials() {
                                         rel="noreferrer"
                                         className="review-gmap-link"
                                     >
-                                        View on Google Maps ↗
+                                        View on Google Maps <i className="fa-solid fa-arrow-up-right-from-square" style={{ fontSize: '0.7rem' }}></i>
                                     </a>
                                 </div>
                             </div>
@@ -72,7 +72,7 @@ function Testimonials() {
                                 rel="noreferrer"
                                 className="review-link"
                             >
-                                ⭐ Leave a Review <i className="fa-solid fa-arrow-up-right-from-square" style={{ fontSize: '0.7rem' }}></i>
+                                Leave a Review <i className="fa-solid fa-arrow-up-right-from-square" style={{ fontSize: '0.7rem' }}></i>
                             </a>
                         </div>
                     ))}

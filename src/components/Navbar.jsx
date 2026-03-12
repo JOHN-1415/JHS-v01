@@ -36,9 +36,6 @@ function Navbar({ setCurrentPage }) {
             <div className="nav-container">
                 <div className="logo" onClick={goHome}>
                     <img src={`${BASE}logo.png`} alt="Jeya Hyper Store Logo" />
-                    <span className="logo-text">
-                        <span className="lime">Jeya</span> <span className="gold">Hyper</span> Store
-                    </span>
                 </div>
 
                 <div className="hamburger" onClick={toggleMenu}>

@@ -13,7 +13,7 @@ const SERVICES = [
     },
     {
         id: "shoes",
-        label: "School Shoes",
+        label: "Shoes",
         coverImg: `${BASE}gallery-shoes.jpg`,
         desc: "Canvas, leather and sports shoes for children from KG to Class 12.",
     },

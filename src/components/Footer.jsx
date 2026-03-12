@@ -52,7 +52,7 @@ function Footer({ setCurrentPage }) {
                     <h4 className="footer-heading">Departments</h4>
                     <ul className="footer-dept-list">
                         <li>Groceries</li>
-                        <li>School Shoes</li>
+                        <li>Shoes</li>
                         <li>Gifts</li>
                         <li>Toys</li>
                         <li>Jewels</li>
