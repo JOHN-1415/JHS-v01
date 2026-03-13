@@ -370,8 +370,8 @@ h3, h4, h5, h6 {
 }
 
 .nav-logo-text-img {
-    height: 32px !important;
-    margin-left: 5px;
+    height: 45px !important;
+    margin-left: 10px;
 }
 
 .logo-text {
@@ -2048,7 +2048,7 @@ h3, h4, h5, h6 {
     }
 
     .nav-logo-text-img {
-        height: 24px !important;
+        height: 32px !important;
     }
 
     .hero-logo-img {
