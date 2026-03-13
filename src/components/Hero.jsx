@@ -51,8 +51,9 @@ function Hero() {
                     <div className="hero-badge">
                         <i className="fa-solid fa-star"></i> 4.6 Rating · 4+ Trusted Years
                     </div>
-                    <div className="hero-logo-container">
-                        <img src={`${BASE}header-logo.png`} alt="Jeya Hyper Store" className="hero-logo-img" />
+                    <div className="hero-logo">
+                        <img src={`${BASE}header-logo.png`} alt="Jeya Hyper Store Logo" className="hero-logo-img" />
+                        <img src={`${BASE}store-name-2.png`} alt="Jeya Hyper Store" className="hero-logo-text-img" />
                     </div>
                     <p className="hero-subtitle">Your One-Stop Shop in Trichy</p>
                     <p className="hero-desc">

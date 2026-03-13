@@ -456,9 +456,7 @@ h3, h4, h5, h6 {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 0;
+    position: relative;
     padding-top: 80px;
     overflow: hidden;
     background: linear-gradient(135deg, #0F1E3D 0%, #162654 40%, #1E3A8A 100%);
@@ -514,7 +512,6 @@ h3, h4, h5, h6 {
     z-index: 1;
     background: linear-gradient(135deg, rgba(10, 20, 41, 0.92) 0%, rgba(15, 30, 65, 0.88) 40%, rgba(20, 38, 90, 0.85) 100%);
     pointer-events: none;
-    will-change: transform;
 }
 
 .hero::after {
@@ -574,12 +571,22 @@ h3, h4, h5, h6 {
     color: var(--white);
 }
 
-.hero-logo-container {
-    margin-bottom: 2rem;
+.hero-logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-bottom: 2.5rem;
 }
 
 .hero-logo-img {
-    height: 180px;
+    height: 140px;
+    object-fit: contain;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
+}
+
+.hero-logo-text-img {
+    height: 160px;
     object-fit: contain;
     filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
 }
@@ -1690,13 +1697,19 @@ h3, h4, h5, h6 {
 }
 
 .footer-logo {
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
+    margin-bottom: 1.5rem;
 }
 
 .footer-logo-img {
-    height: 70px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.footer-logo-text-img {
+    height: 58px;
     object-fit: contain;
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
 }
@@ -1897,54 +1910,26 @@ h3, h4, h5, h6 {
     transform: translateY(0);
 }
 
-/* Modern Scroll-Driven Animations (Parallax Entrance) */
-@supports (animation-timeline: view()) {
-    .reveal {
-        animation: revealAnimation linear both;
-        animation-timeline: view();
-        animation-range: entry 5% cover 40%;
-    }
-
-    @keyframes revealAnimation {
-        from {
-            opacity: 0;
-            transform: translateY(120px) scale(0.85) rotateX(15deg);
-            filter: blur(15px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0) scale(1) rotateX(0);
-            filter: blur(0);
-        }
-    }
-
-    /* Hero Zoom Out / Parallax Exit */
-    .hero-slideshow, .hero-overlay {
-        animation: heroExit linear both;
-        animation-timeline: view();
-        animation-range: exit 0% exit 100%;
-    }
-
-    @keyframes heroExit {
-        to {
-            transform: scale(0.9) translateY(50px);
-            opacity: 0.3;
-        }
-    }
-}
-
-/* Ensure subsequent sections slide OVER the sticky hero */
-#about, #services, #why-us, #gallery, #testimonials, #faq, #location, #contact, .hashtags-section {
-    position: relative;
-    z-index: 10;
-    box-shadow: 0 -20px 40px rgba(0, 0, 0, 0.3);
-}
-
-/* Base reveal for browsers without animation-timeline */
+/* Modern Scroll-Driven Animations (Standard Reveal) */
 .reveal {
     opacity: 0;
     transform: translateY(40px);
     transition: opacity 1s cubic-bezier(0.2, 0.8, 0.2, 1), transform 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#about, #services, #why-us, #gallery, #testimonials, #faq, #location, #contact, .hashtags-section {
+    position: relative;
+    z-index: 1;
+    background: var(--white);
+}
+
+#services, #testimonials, #faq, #contact {
+    background: var(--navy-dark);
 }
 
 /* ==========================================================================
@@ -2062,15 +2047,35 @@ h3, h4, h5, h6 {
 }
 
 @media (max-width: 768px) {
+    .navbar {
+        height: auto;
+    }
+
+    .nav-container {
+        justify-content: center;
+        padding: 10px 15px;
+        position: relative;
+    }
+
     .hamburger {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
         display: block;
+    }
+
+    .logo {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
     }
 
     .nav-menu {
         position: fixed;
         top: 0;
         right: -100%;
-        width: 100%; /* Full screen overlay */
+        width: 100%;
         height: 100vh;
         background: #0a1628;
         flex-direction: column;
@@ -2101,6 +2106,11 @@ h3, h4, h5, h6 {
 
     .nav-logo-text-img {
         height: 42px !important;
+    }
+
+    .hero-logo {
+        justify-content: center;
+        gap: 10px;
     }
 
     .hero-logo-img {

@@ -14,9 +14,10 @@ function Footer({ setCurrentPage }) {
             <SketchBackground color="#1E3A8A" opacity={0.02} />
             <div className="container footer-container" style={{ position: 'relative', zIndex: 1 }}>
                 <div className="footer-col">
-                    <span className="footer-logo" onClick={goHome} style={{ cursor: 'pointer' }}>
-                        <img src={`${import.meta.env.BASE_URL}header-logo.png`} alt="Jeya Hyper Store" className="footer-logo-img" />
-                    </span>
+                    <div className="footer-logo" onClick={goHome} style={{ cursor: 'pointer' }}>
+                        <img src={`${import.meta.env.BASE_URL}header-logo.png`} alt="Jeya Hyper Store Logo" className="footer-logo-img" />
+                        <img src={`${import.meta.env.BASE_URL}store-name-2.png`} alt="Jeya Hyper Store" className="footer-logo-text-img" />
+                    </div>
                     <p className="footer-desc">
                         Your trusted neighbourhood store in Srirangam, Trichy. Quality products, honest prices, and warm service — all under one roof.
                     </p>
