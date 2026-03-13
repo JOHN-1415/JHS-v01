@@ -62,7 +62,7 @@ function Footer({ setCurrentPage }) {
             </div>
             <div className="footer-bottom" style={{ position: 'relative', zIndex: 1 }}>
                 <p>&copy; 2026 Jeya Hyper Store, Srirangam, Trichy. All rights reserved.</p>
-                <span>Website by <a href="https://javia.studio/" target="_blank" rel="noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>jAvia</a></span>
+                <span>Crafted with passion in Trichy  |  Website by <a href="https://javia.studio/" target="_blank" rel="noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>jAvia</a></span>
             </div>
         </footer>
     );
