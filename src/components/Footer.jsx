@@ -15,7 +15,7 @@ function Footer({ setCurrentPage }) {
             <div className="container footer-container" style={{ position: 'relative', zIndex: 1 }}>
                 <div className="footer-col">
                     <span className="footer-logo" onClick={goHome} style={{ cursor: 'pointer' }}>
-                        <span className="white">Jeya</span> <span className="gold">Hyper</span> Store
+                        <img src={`${import.meta.env.BASE_URL}header-logo.png`} alt="Jeya Hyper Store" className="footer-logo-img" />
                     </span>
                     <p className="footer-desc">
                         Your trusted neighbourhood store in Srirangam, Trichy. Quality products, honest prices, and warm service — all under one roof.
