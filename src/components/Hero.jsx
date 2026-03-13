@@ -8,7 +8,7 @@ const slideshowImages = [
     'gallery-groceries.jpg',
     'gallery-jewels.jpg',
     'gallery-shoes.jpg',
-    'cat-gifts-3.jpg',
+    'cat-gifts-3.png',
     'cat-stationary-3.jpg',
 ];
 
