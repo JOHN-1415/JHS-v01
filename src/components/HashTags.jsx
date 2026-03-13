@@ -25,8 +25,15 @@ function HashTags({ setCurrentPage }) {
                             key={i} 
                             className="hashtag-item"
                             onClick={() => {
-                                setCurrentPage(tag.dept);
-                                window.scrollTo(0, 0);
+                                if (tag.label === "supermarket trichy" || tag.label === "departmental store srirangam") {
+                                    setCurrentPage('home');
+                                    setTimeout(() => {
+                                        document.getElementById('home')?.scrollIntoView({ behavior: 'smooth' });
+                                    }, 100);
+                                } else {
+                                    setCurrentPage(tag.dept);
+                                    window.scrollTo(0, 0);
+                                }
                             }}
                         >
                             {tag.label}

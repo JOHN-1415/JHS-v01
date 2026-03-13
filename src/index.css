@@ -187,7 +187,7 @@ h3, h4, h5, h6 {
 .services .section-title,
 .testimonials .section-title,
 .contact .section-title {
-    color: var(--white);
+    color: #93C5FD;
 }
 
 .services .section-desc,
@@ -331,7 +331,7 @@ h3, h4, h5, h6 {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 22px 0;
+    padding: 14px 0;
     z-index: 1000;
     transition: var(--trans-normal);
     background: var(--navy-dark);
@@ -340,7 +340,7 @@ h3, h4, h5, h6 {
 .navbar.scrolled {
     background: rgba(15, 30, 61, 0.95);
     backdrop-filter: blur(12px);
-    padding: 14px 0;
+    padding: 10px 0;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
 }
 
@@ -366,12 +366,12 @@ h3, h4, h5, h6 {
 }
 
 .nav-logo-img {
-    height: 70px !important;
+    height: 48px !important;
 }
 
 .nav-logo-text-img {
-    height: 85px !important;
-    margin-left: 12px;
+    height: 55px !important;
+    margin-left: 8px;
 }
 
 .logo-text {
@@ -457,7 +457,7 @@ h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     position: relative;
-    padding-top: 130px;
+    padding-top: 80px;
     overflow: hidden;
     background: linear-gradient(135deg, #0F1E3D 0%, #162654 40%, #1E3A8A 100%);
 }
@@ -1772,6 +1772,12 @@ h3, h4, h5, h6 {
     margin-bottom: 8px;
     font-size: 0.84rem;
     color: rgba(255, 255, 255, 0.55);
+    transition: var(--trans-fast);
+}
+
+.footer-dept-list li:hover {
+    color: var(--royal-blue);
+    transform: translateX(5px);
 }
 
 .footer-bottom {
@@ -1887,12 +1893,32 @@ h3, h4, h5, h6 {
 .reveal {
     opacity: 0;
     transform: translateY(25px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 .reveal.active {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* Modern Scroll-Driven Animations (Page Transition Effect) */
+@supports (animation-timeline: view()) {
+    .reveal {
+        animation: revealAnimation linear both;
+        animation-timeline: view();
+        animation-range: entry 10% cover 30%;
+    }
+
+    @keyframes revealAnimation {
+        from {
+            opacity: 0;
+            transform: translateY(50px) scale(0.95);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+    }
 }
 
 /* ==========================================================================
@@ -2044,11 +2070,11 @@ h3, h4, h5, h6 {
     }
 
     .nav-logo-img {
-        height: 50px !important;
+        height: 38px !important;
     }
 
     .nav-logo-text-img {
-        height: 60px !important;
+        height: 42px !important;
     }
 
     .hero-logo-img {

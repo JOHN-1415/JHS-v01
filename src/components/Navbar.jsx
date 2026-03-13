@@ -36,7 +36,7 @@ function Navbar({ setCurrentPage }) {
             <div className="nav-container">
                 <div className="logo" onClick={goHome}>
                     <img src={`${BASE}header-logo.png`} alt="Jeya Hyper Store Logo" className="nav-logo-img" />
-                    <img src={`${BASE}store-name.png`} alt="Jeya Hyper Store" className="nav-logo-text-img" />
+                    <img src={`${BASE}store-name-2.png`} alt="Jeya Hyper Store" className="nav-logo-text-img" />
                 </div>
 
                 <div className="hamburger" onClick={toggleMenu}>

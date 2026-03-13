@@ -15,6 +15,7 @@ const ALL_PRODUCTS = {
             { name: "Instant Foods & Snacks Section",   img: `${BASE}cat-groceries-3.jpg` },
             { name: "Spices and Masala Collection",     img: `${BASE}cat-groceries-4.jpg` },
             { name: "Snacks and Confectionery Items", img: `${BASE}cat-groceries-5.jpg` },
+            { name: "Pet Food and Pet Care Supplies",      img: `${BASE}cat-groceries-6.jpg` },
         ],
     },
     shoes: {
@@ -63,7 +64,6 @@ const ALL_PRODUCTS = {
         waMsg: "Hi! I need Stationery items from Jeya Hyper Store.",
         items: [
             { name: "Bathroom & Toilet Cleaning Products", img: `${BASE}cat-stationary-1.jpg` },
-            { name: "Pet Food and Pet Care Supplies",      img: `${BASE}cat-stationary-2.jpg` },
             { name: "Home Care and Daily Essentials Section",    img: `${BASE}cat-stationary-3.jpg` },
             { name: "Birthday and Party Decoration Items",                img: `${BASE}cat-stationary-4.jpg` },
             { name: "School Stationery",                                   img: `${BASE}cat-stationary-5.jpg` },
