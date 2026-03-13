@@ -52,7 +52,7 @@ function Hero() {
                         <i className="fa-solid fa-star"></i> 4.6 Rating · 4+ Trusted Years
                     </div>
                     <div className="hero-logo-container">
-                        <img src={`${BASE}store-name.png`} alt="Jeya Hyper Store" className="hero-logo-img" />
+                        <img src={`${BASE}header-logo.png`} alt="Jeya Hyper Store" className="hero-logo-img" />
                     </div>
                     <p className="hero-subtitle">Your One-Stop Shop in Trichy</p>
                     <p className="hero-desc">

@@ -365,6 +365,15 @@ h3, h4, h5, h6 {
     object-fit: contain;
 }
 
+.nav-logo-img {
+    height: 48px !important;
+}
+
+.nav-logo-text-img {
+    height: 32px !important;
+    margin-left: 5px;
+}
+
 .logo-text {
     font-family: var(--font-heading);
     font-size: 1.2rem;
@@ -567,7 +576,7 @@ h3, h4, h5, h6 {
 }
 
 .hero-logo-img {
-    height: 140px;
+    height: 180px;
     object-fit: contain;
     filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
 }
@@ -2032,6 +2041,18 @@ h3, h4, h5, h6 {
         color: white;
         cursor: pointer;
         display: block;
+    }
+
+    .nav-logo-img {
+        height: 36px !important;
+    }
+
+    .nav-logo-text-img {
+        height: 24px !important;
+    }
+
+    .hero-logo-img {
+        height: 120px !important;
     }
 
 
