@@ -34,7 +34,7 @@ const ALL_PRODUCTS = {
         waMsg: "Hi! I am looking for Gift items at Jeya Hyper Store.",
         items: [
             { name: "Gift Box Decoration",         img: `${BASE}cat-gifts-1.jpg` },
-            { name: "Assorted Gift & Decorative Items Collection",   img: `${BASE}cat-gifts-2.WEBP` },
+            { name: "Assorted Gift & Decorative Items Collection",   img: `${BASE}cat-gifts-2.webp` },
             { name: "Couple Figurine Gift Frames",          img: `${BASE}cat-gifts-3.png` },
             { name: "Wall Clock Collection",     img: `${BASE}cat-gifts-4.png` },
         ],
