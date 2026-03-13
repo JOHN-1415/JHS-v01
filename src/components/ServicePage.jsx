@@ -64,9 +64,9 @@ const ALL_PRODUCTS = {
         waMsg: "Hi! I need Stationery items from Jeya Hyper Store.",
         items: [
             { name: "Bathroom & Toilet Cleaning Products", img: `${BASE}cat-stationary-1.jpg` },
-            { name: "Home Care and Daily Essentials Section",    img: `${BASE}cat-stationary-3.jpg` },
-            { name: "Birthday and Party Decoration Items",                img: `${BASE}cat-stationary-4.jpg` },
-            { name: "School Stationery",                                   img: `${BASE}cat-stationary-5.jpg` },
+            { name: "Home Care and Daily Essentials Section",    img: `${BASE}cat-stationary-2.jpg` },
+            { name: "Birthday and Party Decoration Items",                img: `${BASE}cat-stationary-3.jpg` },
+            { name: "School Stationery",                                   img: `${BASE}cat-stationary-4.jpg` },
         ],
     },
 };
