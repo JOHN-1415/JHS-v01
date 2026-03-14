@@ -2097,17 +2097,20 @@ h3, h4, h5, h6 {
     }
 
     .nav-container {
-        justify-content: center;
+        justify-content: space-between;
     }
 
     .logo {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
+        position: static;
+        transform: none;
     }
 
     .nav-logo-combined {
         height: 42px;
+    }
+
+    .hero-logo {
+        justify-content: center;
     }
 
     .hero-logo-combined {
