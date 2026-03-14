@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './index.css';
 
 import Navbar from './components/Navbar';
@@ -19,6 +19,8 @@ import HashTags from './components/HashTags';
 function App() {
     const [currentPage, setCurrentPage] = useState('home');
     const [scrollPosition, setScrollPosition] = useState(0);
+    // pendingScrollTo: null = do nothing, 0 = go to top, number > 0 = restore to that position
+    const pendingScrollTo = useRef(null);
 
     useEffect(() => {
         if ('scrollRestoration' in window.history) {
@@ -48,12 +50,9 @@ function App() {
     useEffect(() => {
         const handlePopstate = (event) => {
             if (currentPage !== 'home') {
-                setCurrentPage('home');
                 const savedPos = event.state?.scrollPosition || scrollPosition;
-                // Wait for React to render, then restore instantly
-                requestAnimationFrame(() => {
-                    restoreScroll(savedPos);
-                });
+                pendingScrollTo.current = savedPos;
+                setCurrentPage('home');
             }
         };
 
@@ -67,8 +66,32 @@ function App() {
         return () => window.removeEventListener('popstate', handlePopstate);
     }, [currentPage, scrollPosition]);
 
-    // Re-trigger reveal on page change
+    // This useEffect fires AFTER React has rendered the new page content
     useEffect(() => {
+        if (pendingScrollTo.current !== null) {
+            const targetPos = pendingScrollTo.current;
+            pendingScrollTo.current = null;
+
+            // Disable smooth scroll so it's instant
+            document.documentElement.style.scrollBehavior = 'auto';
+
+            if (targetPos > 0) {
+                // Restoring to a saved position — pre-activate all reveals
+                const reveals = document.querySelectorAll('.reveal');
+                reveals.forEach(el => el.classList.add('active'));
+            }
+
+            window.scrollTo(0, targetPos);
+
+            // Re-enable smooth scroll after the paint
+            requestAnimationFrame(() => {
+                requestAnimationFrame(() => {
+                    document.documentElement.style.scrollBehavior = '';
+                });
+            });
+        }
+
+        // Also re-trigger reveals for visible elements
         setTimeout(() => {
             const reveals = document.querySelectorAll('.reveal');
             const windowHeight = window.innerHeight;
@@ -83,41 +106,13 @@ function App() {
 
     const navigateToService = (id) => {
         setScrollPosition(window.scrollY);
-        document.documentElement.style.scrollBehavior = 'auto';
+        pendingScrollTo.current = 0;
         setCurrentPage(id);
-        window.scrollTo(0, 0);
-        requestAnimationFrame(() => {
-            document.documentElement.style.scrollBehavior = '';
-        });
-    };
-
-    const restoreScroll = (pos) => {
-        // 1. Disable smooth scrolling temporarily
-        document.documentElement.style.scrollBehavior = 'auto';
-
-        // 2. Pre-activate ALL reveal elements instantly so they don't
-        //    cause layout shifts (opacity:0 + translateY would collapse sections)
-        const reveals = document.querySelectorAll('.reveal');
-        reveals.forEach(el => el.classList.add('active'));
-
-        // 3. Instantly jump to saved position
-        window.scrollTo(0, pos);
-
-        // 4. Re-enable smooth scrolling after a tick
-        requestAnimationFrame(() => {
-            requestAnimationFrame(() => {
-                document.documentElement.style.scrollBehavior = '';
-            });
-        });
     };
 
     const handleBack = () => {
-        const savedPos = scrollPosition;
+        pendingScrollTo.current = scrollPosition;
         setCurrentPage('home');
-        // Use requestAnimationFrame to wait for React to render the home page DOM
-        requestAnimationFrame(() => {
-            restoreScroll(savedPos);
-        });
     };
 
     return (
