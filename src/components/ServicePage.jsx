@@ -93,7 +93,6 @@ function ServicePage({ deptId, onBack }) {
                         <span>{dept.label}</span>
                     </div>
 
-                    <span className="service-page-badge">{dept.items.length} Products</span>
 
                     <h1 className="service-page-title">{dept.label}</h1>
                     <p className="service-page-desc">{dept.desc}</p>

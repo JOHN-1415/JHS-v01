@@ -54,7 +54,7 @@ function Location() {
                             <div className="info-icon"><i className="fa-solid fa-clock"></i></div>
                             <div className="info-text">
                                 <h4>Hours</h4>
-                                <p>7:00 AM – 10:00 PM, All Days</p>
+                                <p>8:00 AM – 10:00 PM, All Days</p>
                             </div>
                         </div>
 

@@ -63,6 +63,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Disable text selection on interactive elements */
+button, a, .btn, .nav-link, .hamburger, .logo, .nav-menu,
+.service-card, .gallery-item, .review-card, .faq-question,
+.method-item, .info-card, .hashtag-item, .social-icon,
+.stat-item, .feature-card, .back-link, .breadcrumb,
+img, .hero-badge, .mobile-close-btn, .footer-dept-list li {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 html {
