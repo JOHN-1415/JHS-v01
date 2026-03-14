@@ -19,7 +19,6 @@ function Navbar({ setCurrentPage }) {
 
     const goHome = () => {
         setCurrentPage('home');
-        window.scrollTo(0, 0);
         closeMenu();
     };
 
@@ -35,8 +34,7 @@ function Navbar({ setCurrentPage }) {
         <header className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
             <div className="nav-container">
                 <div className="logo" onClick={goHome}>
-                    <img src={`${BASE}header-logo.png`} alt="Jeya Hyper Store Logo" className="nav-logo-img" />
-                    <img src={`${BASE}store-name-2.png`} alt="Jeya Hyper Store" className="nav-logo-text-img" />
+                    <img src={`${BASE}logo-store-name.png`} alt="Jeya Hyper Store Logo" className="nav-logo-combined" />
                 </div>
 
                 <div className="hamburger" onClick={toggleMenu}>

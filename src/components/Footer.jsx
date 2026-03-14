@@ -5,7 +5,6 @@ function Footer({ setCurrentPage }) {
     const goHome = () => {
         if (setCurrentPage) {
             setCurrentPage('home');
-            window.scrollTo(0, 0);
         }
     };
 
@@ -15,8 +14,7 @@ function Footer({ setCurrentPage }) {
             <div className="container footer-container" style={{ position: 'relative', zIndex: 1 }}>
                 <div className="footer-col">
                     <div className="footer-logo" onClick={goHome} style={{ cursor: 'pointer' }}>
-                        <img src={`${import.meta.env.BASE_URL}header-logo.png`} alt="Jeya Hyper Store Logo" className="footer-logo-img" />
-                        <img src={`${import.meta.env.BASE_URL}store-name-2.png`} alt="Jeya Hyper Store" className="footer-logo-text-img" />
+                        <img src={`${import.meta.env.BASE_URL}logo-store-name.png`} alt="Jeya Hyper Store" className="footer-logo-combined" />
                     </div>
                     <p className="footer-desc">
                         Your trusted neighbourhood store in Srirangam, Trichy. Quality products, honest prices, and warm service — all under one roof.
@@ -53,12 +51,12 @@ function Footer({ setCurrentPage }) {
                 <div className="footer-col">
                     <h4 className="footer-heading">Departments</h4>
                     <ul className="footer-dept-list">
-                        <li onClick={() => { setCurrentPage('groceries'); window.scrollTo(0,0); }} style={{ cursor: 'pointer' }}>Groceries</li>
-                        <li onClick={() => { setCurrentPage('shoes'); window.scrollTo(0,0); }} style={{ cursor: 'pointer' }}>Shoes</li>
-                        <li onClick={() => { setCurrentPage('gifts'); window.scrollTo(0,0); }} style={{ cursor: 'pointer' }}>Gifts</li>
-                        <li onClick={() => { setCurrentPage('toys'); window.scrollTo(0,0); }} style={{ cursor: 'pointer' }}>Toys</li>
-                        <li onClick={() => { setCurrentPage('jewels'); window.scrollTo(0,0); }} style={{ cursor: 'pointer' }}>Jewels</li>
-                        <li onClick={() => { setCurrentPage('stationary'); window.scrollTo(0,0); }} style={{ cursor: 'pointer' }}>Stationeries</li>
+                        <li onClick={() => { setCurrentPage('groceries'); }} style={{ cursor: 'pointer' }}>Groceries</li>
+                        <li onClick={() => { setCurrentPage('shoes'); }} style={{ cursor: 'pointer' }}>Shoes</li>
+                        <li onClick={() => { setCurrentPage('gifts'); }} style={{ cursor: 'pointer' }}>Gifts</li>
+                        <li onClick={() => { setCurrentPage('toys'); }} style={{ cursor: 'pointer' }}>Toys</li>
+                        <li onClick={() => { setCurrentPage('jewels'); }} style={{ cursor: 'pointer' }}>Jewels</li>
+                        <li onClick={() => { setCurrentPage('stationary'); }} style={{ cursor: 'pointer' }}>Stationeries</li>
                     </ul>
                 </div>
             </div>

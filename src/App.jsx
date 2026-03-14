@@ -18,6 +18,7 @@ import HashTags from './components/HashTags';
 
 function App() {
     const [currentPage, setCurrentPage] = useState('home');
+    const [scrollPosition, setScrollPosition] = useState(0);
 
     useEffect(() => {
         const revealOnScroll = () => {
@@ -44,7 +45,10 @@ function App() {
         const handlePopstate = (event) => {
             if (currentPage !== 'home') {
                 setCurrentPage('home');
-                window.scrollTo(0, 0);
+                // Use a small timeout to let the DOM update before scrolling
+                setTimeout(() => {
+                    window.scrollTo(0, scrollPosition);
+                }, 50);
             }
         };
 
@@ -56,7 +60,7 @@ function App() {
         }
 
         return () => window.removeEventListener('popstate', handlePopstate);
-    }, [currentPage]);
+    }, [currentPage, scrollPosition]);
 
     // Re-trigger reveal on page change
     useEffect(() => {
@@ -72,6 +76,19 @@ function App() {
         }, 100);
     }, [currentPage]);
 
+    const navigateToService = (id) => {
+        setScrollPosition(window.scrollY);
+        setCurrentPage(id);
+        window.scrollTo(0, 0);
+    };
+
+    const handleBack = () => {
+        setCurrentPage('home');
+        setTimeout(() => {
+            window.scrollTo(0, scrollPosition);
+        }, 50);
+    };
+
     return (
         <div>
             <Navbar setCurrentPage={setCurrentPage} />
@@ -79,7 +96,7 @@ function App() {
                 <>
                     <Hero />
                     <About />
-                    <Services setCurrentPage={setCurrentPage} />
+                    <Services setCurrentPage={navigateToService} />
                     <WhyUs />
                     <Gallery />
                     <Testimonials />
@@ -90,14 +107,11 @@ function App() {
             ) : (
                 <ServicePage
                     deptId={currentPage}
-                    onBack={() => {
-                        setCurrentPage('home');
-                        window.scrollTo(0, 0);
-                    }}
+                    onBack={handleBack}
                 />
             )}
-            {currentPage === 'home' && <HashTags setCurrentPage={setCurrentPage} />}
-            <Footer setCurrentPage={setCurrentPage} />
+            {currentPage === 'home' && <HashTags setCurrentPage={navigateToService} />}
+            <Footer setCurrentPage={navigateToService} />
             <FloatingButtons />
         </div>
     );

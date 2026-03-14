@@ -9,7 +9,7 @@ function About() {
             <SketchBackground color="#1E3A8A" opacity={0.02} />
             <div className="container about-container" style={{ position: 'relative', zIndex: 1 }}>
                 <div className="about-image reveal">
-                    <img src={`${BASE}gallery-exterior.jpg`} alt="Jeya Hyper Store" />
+                    <img src={`${BASE}gallery-exterior.WEBP`} alt="Jeya Hyper Store" />
                     <div className="experience-badge">
                         <span className="exp-number">4+</span>
                         <span className="exp-text">Years of<br />Trust</span>

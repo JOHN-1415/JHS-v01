@@ -8,37 +8,37 @@ const SERVICES = [
     {
         id: "groceries",
         label: "Groceries",
-        coverImg: `${BASE}gallery-groceries.jpg`,
+        coverImg: `${BASE}gallery-groceries.WEBP`,
         desc: "Rice, dals, spices, oils and all your daily kitchen essentials.",
     },
     {
         id: "shoes",
         label: "Shoes",
-        coverImg: `${BASE}gallery-shoes.jpg`,
+        coverImg: `${BASE}gallery-shoes.WEBP`,
         desc: "Canvas, leather and sports shoes for children from KG to Class 12.",
     },
     {
         id: "gifts",
         label: "Gifts",
-        coverImg: `${BASE}gallery-gifts.jpg`,
+        coverImg: `${BASE}gallery-gifts.WEBP`,
         desc: "Gift hampers, greeting cards, seasonal gifts and wrapping supplies.",
     },
     {
         id: "toys",
         label: "Toys",
-        coverImg: `${BASE}cat-toys-1.jpg`,
+        coverImg: `${BASE}cat-toys-1.WEBP`,
         desc: "Stuffed toys, board games, car toys and educational play items.",
     },
     {
         id: "jewels",
         label: "Jewels",
-        coverImg: `${BASE}gallery-jewels.jpg`,
+        coverImg: `${BASE}gallery-jewels.WEBP`,
         desc: "Gold-plated sets, bangles, earrings, necklaces and chains.",
     },
     {
         id: "stationary",
         label: "Stationeries",
-        coverImg: `${BASE}gallery-stationary.jpg`,
+        coverImg: `${BASE}gallery-stationary.WEBP`,
         desc: "Notebooks, pens, geometry boxes, art supplies and school bags.",
     },
 ];

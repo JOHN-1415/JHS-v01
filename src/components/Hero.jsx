@@ -4,12 +4,12 @@ import SketchBackground from './SketchBackground';
 const BASE = import.meta.env.BASE_URL;
 
 const slideshowImages = [
-    'gallery-exterior.jpg',
-    'gallery-groceries.jpg',
-    'gallery-jewels.jpg',
-    'gallery-shoes.jpg',
-    'cat-gifts-3.png',
-    'cat-stationary-3.jpg',
+    'gallery-exterior.WEBP',
+    'gallery-groceries.WEBP',
+    'gallery-jewels.WEBP',
+    'gallery-shoes.WEBP',
+    'cat-gifts-3.WEBP',
+    'cat-stationary-3.WEBP',
 ];
 
 function Hero() {
@@ -52,8 +52,7 @@ function Hero() {
                         <i className="fa-solid fa-star"></i> 4.6 Rating · 4+ Trusted Years
                     </div>
                     <div className="hero-logo">
-                        <img src={`${BASE}header-logo.png`} alt="Jeya Hyper Store Logo" className="hero-logo-img" />
-                        <img src={`${BASE}store-name-2.png`} alt="Jeya Hyper Store" className="hero-logo-text-img" />
+                        <img src={`${BASE}logo-store-name.png`} alt="Jeya Hyper Store" className="hero-logo-combined" />
                     </div>
                     <p className="hero-subtitle">Your One-Stop Shop in Trichy</p>
                     <p className="hero-desc">
@@ -92,7 +91,7 @@ function Hero() {
                     </div>
                 </div>
                 <div className="hero-image reveal">
-                    <img src={`${BASE}gallery-exterior.jpg`} alt="Jeya Hyper Store" className="hero-store-img" />
+                    <img src={`${BASE}gallery-exterior.WEBP`} alt="Jeya Hyper Store" className="hero-store-img" />
                 </div>
             </div>
         </section>

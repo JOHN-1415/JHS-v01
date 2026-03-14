@@ -4,12 +4,12 @@ import SketchBackground from './SketchBackground';
 const BASE = import.meta.env.BASE_URL;
 
 const galleryItems = [
-    { src: `${BASE}gallery-exterior.jpg`, caption: 'Store Front Exterior', featured: true },
-    { src: `${BASE}gallery-groceries.jpg`, caption: 'Fresh Grocery Section', featured: false },
-    { src: `${BASE}gallery-shoes.jpg`, caption: 'School Shoes Corner', featured: false },
-    { src: `${BASE}gallery-gifts.jpg`, caption: 'Gifts & Toys Aisle', featured: false },
-    { src: `${BASE}gallery-jewels.jpg`, caption: 'Jewellery Collection', featured: false },
-    { src: `${BASE}gallery-stationary.jpg`, caption: 'Stationery Section', featured: false },
+    { src: `${BASE}gallery-exterior.WEBP`, caption: 'Store Front Exterior', featured: true },
+    { src: `${BASE}gallery-groceries.WEBP`, caption: 'Fresh Grocery Section', featured: false },
+    { src: `${BASE}gallery-shoes.WEBP`, caption: 'School Shoes Corner', featured: false },
+    { src: `${BASE}gallery-gifts.WEBP`, caption: 'Gifts & Toys Aisle', featured: false },
+    { src: `${BASE}gallery-jewels.WEBP`, caption: 'Jewellery Collection', featured: false },
+    { src: `${BASE}gallery-stationary.WEBP`, caption: 'Stationery Section', featured: false },
 ];
 
 function Gallery() {

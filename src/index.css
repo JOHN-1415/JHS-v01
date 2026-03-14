@@ -365,13 +365,9 @@ h3, h4, h5, h6 {
     object-fit: contain;
 }
 
-.nav-logo-img {
-    height: 48px !important;
-}
-
-.nav-logo-text-img {
-    height: 55px !important;
-    margin-left: 0;
+.nav-logo-combined {
+    height: 55px;
+    object-fit: contain;
 }
 
 .logo-text {
@@ -579,13 +575,7 @@ h3, h4, h5, h6 {
     margin-bottom: 2.5rem;
 }
 
-.hero-logo-img {
-    height: 140px;
-    object-fit: contain;
-    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
-}
-
-.hero-logo-text-img {
+.hero-logo-combined {
     height: 160px;
     object-fit: contain;
     filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
@@ -1703,13 +1693,8 @@ h3, h4, h5, h6 {
     margin-bottom: 1.5rem;
 }
 
-.footer-logo-img {
-    height: 50px;
-    object-fit: contain;
-}
-
-.footer-logo-text-img {
-    height: 58px;
+.footer-logo-combined {
+    height: 60px;
     object-fit: contain;
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
 }
@@ -2100,21 +2085,12 @@ h3, h4, h5, h6 {
         display: block;
     }
 
-    .nav-logo-img {
-        height: 38px !important;
+    .nav-logo-combined {
+        height: 42px;
     }
 
-    .nav-logo-text-img {
-        height: 42px !important;
-    }
-
-    .hero-logo {
-        justify-content: center;
-        gap: 10px;
-    }
-
-    .hero-logo-img {
-        height: 120px !important;
+    .hero-logo-combined {
+        height: 120px;
     }
 
 
