@@ -26,7 +26,7 @@ function HashTags({ setCurrentPage }) {
                             className="hashtag-item"
                             onClick={() => {
                                 if (tag.label === "supermarket trichy" || tag.label === "departmental store srirangam") {
-                                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                                    window.scrollTo({ top: 0, behavior: 'auto' });
                                 } else {
                                     setCurrentPage(tag.dept);
                                 }

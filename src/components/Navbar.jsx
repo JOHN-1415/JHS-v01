@@ -22,13 +22,13 @@ function Navbar({ setCurrentPage, currentPage }) {
             setCurrentPage('home');
             if (targetId) {
                 setTimeout(() => {
-                    document.getElementById(targetId)?.scrollIntoView({ behavior: 'smooth' });
+                    document.getElementById(targetId)?.scrollIntoView({ behavior: 'auto' });
                 }, 150);
             }
         } else if (targetId) {
-            document.getElementById(targetId)?.scrollIntoView({ behavior: 'smooth' });
+            document.getElementById(targetId)?.scrollIntoView({ behavior: 'auto' });
         } else {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            window.scrollTo({ top: 0, behavior: 'auto' });
         }
         closeMenu();
     };

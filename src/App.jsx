@@ -72,9 +72,6 @@ function App() {
             const targetPos = pendingScrollTo.current;
             pendingScrollTo.current = null;
 
-            // Disable smooth scroll so it's instant
-            document.documentElement.style.scrollBehavior = 'auto';
-
             if (targetPos > 0) {
                 // Restoring to a saved position — pre-activate all reveals
                 const reveals = document.querySelectorAll('.reveal');
@@ -82,13 +79,6 @@ function App() {
             }
 
             window.scrollTo(0, targetPos);
-
-            // Re-enable smooth scroll after the paint
-            requestAnimationFrame(() => {
-                requestAnimationFrame(() => {
-                    document.documentElement.style.scrollBehavior = '';
-                });
-            });
         }
 
         // Also re-trigger reveals for visible elements
