@@ -83,8 +83,12 @@ function App() {
 
     const navigateToService = (id) => {
         setScrollPosition(window.scrollY);
+        document.documentElement.style.scrollBehavior = 'auto';
         setCurrentPage(id);
         window.scrollTo(0, 0);
+        requestAnimationFrame(() => {
+            document.documentElement.style.scrollBehavior = '';
+        });
     };
 
     const restoreScroll = (pos) => {
