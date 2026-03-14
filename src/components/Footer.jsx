@@ -52,6 +52,7 @@ function Footer({ setCurrentPage, currentPage }) {
                         <li><a href="#about" onClick={(e) => { e.preventDefault(); navigate('home', 'about'); }}>About</a></li>
                         <li><a href="#services" onClick={(e) => { e.preventDefault(); navigate('home', 'services'); }}>Services</a></li>
                         <li><a href="#why-us" onClick={(e) => { e.preventDefault(); navigate('home', 'why-us'); }}>Strengths</a></li>
+                        <li><a href="#gallery" onClick={(e) => { e.preventDefault(); navigate('home', 'gallery'); }}>Gallery</a></li>
                         <li><a href="#testimonials" onClick={(e) => { e.preventDefault(); navigate('home', 'testimonials'); }}>Testimonials</a></li>
                         <li><a href="#faq" onClick={(e) => { e.preventDefault(); navigate('home', 'faq'); }}>FAQ</a></li>
                         <li><a href="#location" onClick={(e) => { e.preventDefault(); navigate('home', 'location'); }}>Location</a></li>
