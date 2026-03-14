@@ -50,9 +50,9 @@ function App() {
             if (currentPage !== 'home') {
                 setCurrentPage('home');
                 const savedPos = event.state?.scrollPosition || scrollPosition;
-                // Use multiple timeouts to ensure scroll is applied after render/layout
-                [50, 150, 300, 500].forEach(delay => {
-                    setTimeout(() => window.scrollTo(0, savedPos), delay);
+                // Wait for React to render, then restore instantly
+                requestAnimationFrame(() => {
+                    restoreScroll(savedPos);
                 });
             }
         };
@@ -87,19 +87,33 @@ function App() {
         window.scrollTo(0, 0);
     };
 
+    const restoreScroll = (pos) => {
+        // 1. Disable smooth scrolling temporarily
+        document.documentElement.style.scrollBehavior = 'auto';
+
+        // 2. Pre-activate ALL reveal elements instantly so they don't
+        //    cause layout shifts (opacity:0 + translateY would collapse sections)
+        const reveals = document.querySelectorAll('.reveal');
+        reveals.forEach(el => el.classList.add('active'));
+
+        // 3. Instantly jump to saved position
+        window.scrollTo(0, pos);
+
+        // 4. Re-enable smooth scrolling after a tick
+        requestAnimationFrame(() => {
+            requestAnimationFrame(() => {
+                document.documentElement.style.scrollBehavior = '';
+            });
+        });
+    };
+
     const handleBack = () => {
         const savedPos = scrollPosition;
         setCurrentPage('home');
-        // Increase timeout and try multiple times to ensure scroll is applied after render
-        setTimeout(() => {
-            window.scrollTo(0, savedPos);
-        }, 50);
-        setTimeout(() => {
-            window.scrollTo(0, savedPos);
-        }, 150);
-        setTimeout(() => {
-            window.scrollTo(0, savedPos);
-        }, 300);
+        // Use requestAnimationFrame to wait for React to render the home page DOM
+        requestAnimationFrame(() => {
+            restoreScroll(savedPos);
+        });
     };
 
     return (
