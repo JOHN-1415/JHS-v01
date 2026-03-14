@@ -54,15 +54,15 @@ function Navbar({ setCurrentPage, currentPage }) {
                             <i className="fa-solid fa-times"></i>
                         </div>
                     )}
-                    <a href="#home" className="nav-link" onClick={() => goHome('home')}>Home</a>
-                    <a href="#about" className="nav-link" onClick={() => goHome('about')}>About</a>
+                    <a href="#home" className="nav-link" onClick={(e) => { e.preventDefault(); goHome('home'); }}>Home</a>
+                    <a href="#about" className="nav-link" onClick={(e) => { e.preventDefault(); goHome('about'); }}>About</a>
                     <span className="nav-link" onClick={goServices}>Services</span>
-                    <a href="#why-us" className="nav-link" onClick={() => goHome('why-us')}>Strengths</a>
-                    <a href="#gallery" className="nav-link" onClick={() => goHome('gallery')}>Gallery</a>
-                    <a href="#testimonials" className="nav-link" onClick={() => goHome('testimonials')}>Testimonials</a>
-                    <a href="#faq" className="nav-link" onClick={() => goHome('faq')}>FAQ</a>
-                    <a href="#location" className="nav-link" onClick={() => goHome('location')}>Location</a>
-                    <a href="#contact" className="nav-link" onClick={() => goHome('contact')}>Contact</a>
+                    <a href="#why-us" className="nav-link" onClick={(e) => { e.preventDefault(); goHome('why-us'); }}>Strengths</a>
+                    <a href="#gallery" className="nav-link" onClick={(e) => { e.preventDefault(); goHome('gallery'); }}>Gallery</a>
+                    <a href="#testimonials" className="nav-link" onClick={(e) => { e.preventDefault(); goHome('testimonials'); }}>Testimonials</a>
+                    <a href="#faq" className="nav-link" onClick={(e) => { e.preventDefault(); goHome('faq'); }}>FAQ</a>
+                    <a href="#location" className="nav-link" onClick={(e) => { e.preventDefault(); goHome('location'); }}>Location</a>
+                    <a href="#contact" className="nav-link" onClick={(e) => { e.preventDefault(); goHome('contact'); }}>Contact</a>
                     <a
                         href="https://wa.me/919345491984?text=Hi!%20I%20want%20to%20place%20an%20order%20at%20Jeya%20Hyper%20Store."
                         target="_blank"

@@ -417,7 +417,7 @@ h3, h4, h5, h6 {
 }
 
 .nav-link:hover {
-    color: var(--royal-blue);
+    color: var(--gold);
 }
 
 .nav-link:not(.btn-wa-nav)::after {
@@ -427,7 +427,7 @@ h3, h4, h5, h6 {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: var(--royal-blue);
+    background-color: var(--gold);
     transition: var(--trans-normal);
 }
 

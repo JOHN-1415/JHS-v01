@@ -48,14 +48,14 @@ function Footer({ setCurrentPage, currentPage }) {
                 <div className="footer-col">
                     <h4 className="footer-heading">Quick Links</h4>
                     <ul className="footer-links">
-                        <li><a href="#home" onClick={() => navigate('home')}>Home</a></li>
-                        <li><a href="#about" onClick={() => navigate('home', 'about')}>About</a></li>
-                        <li><a href="#services" onClick={() => navigate('home', 'services')}>Services</a></li>
-                        <li><a href="#why-us" onClick={() => navigate('home', 'why-us')}>Strengths</a></li>
-                        <li><a href="#testimonials" onClick={() => navigate('home', 'testimonials')}>Testimonials</a></li>
-                        <li><a href="#faq" onClick={() => navigate('home', 'faq')}>FAQ</a></li>
-                        <li><a href="#location" onClick={() => navigate('home', 'location')}>Location</a></li>
-                        <li><a href="#contact" onClick={() => navigate('home', 'contact')}>Contact</a></li>
+                        <li><a href="#home" onClick={(e) => { e.preventDefault(); navigate('home'); }}>Home</a></li>
+                        <li><a href="#about" onClick={(e) => { e.preventDefault(); navigate('home', 'about'); }}>About</a></li>
+                        <li><a href="#services" onClick={(e) => { e.preventDefault(); navigate('home', 'services'); }}>Services</a></li>
+                        <li><a href="#why-us" onClick={(e) => { e.preventDefault(); navigate('home', 'why-us'); }}>Strengths</a></li>
+                        <li><a href="#testimonials" onClick={(e) => { e.preventDefault(); navigate('home', 'testimonials'); }}>Testimonials</a></li>
+                        <li><a href="#faq" onClick={(e) => { e.preventDefault(); navigate('home', 'faq'); }}>FAQ</a></li>
+                        <li><a href="#location" onClick={(e) => { e.preventDefault(); navigate('home', 'location'); }}>Location</a></li>
+                        <li><a href="#contact" onClick={(e) => { e.preventDefault(); navigate('home', 'contact'); }}>Contact</a></li>
                     </ul>
                 </div>
 
