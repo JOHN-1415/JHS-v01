@@ -2096,17 +2096,26 @@ h3, h4, h5, h6 {
         display: block;
     }
 
+    .navbar {
+        padding: 8px 0 !important;
+    }
+
     .nav-container {
-        justify-content: space-between;
+        justify-content: space-between !important;
     }
 
     .logo {
-        position: static;
-        transform: none;
+        position: static !important;
+        transform: none !important;
+        margin: 0 !important;
     }
 
     .nav-logo-combined {
-        height: 42px;
+        height: 38px;
+    }
+
+    .hero {
+        padding-top: 100px;
     }
 
     .hero-logo {
@@ -2114,7 +2123,7 @@ h3, h4, h5, h6 {
     }
 
     .hero-logo-combined {
-        height: 120px;
+        height: 110px;
     }
 
 
