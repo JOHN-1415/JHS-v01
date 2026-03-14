@@ -1,12 +1,23 @@
 import React from 'react';
 import SketchBackground from './SketchBackground';
 
-function Footer({ setCurrentPage }) {
-    const goHome = () => {
-        if (setCurrentPage) {
+function Footer({ setCurrentPage, currentPage }) {
+    const navigate = (id, targetId = null) => {
+        if (currentPage !== 'home') {
             setCurrentPage('home');
+            if (targetId) {
+                setTimeout(() => {
+                    document.getElementById(targetId)?.scrollIntoView({ behavior: 'smooth' });
+                }, 150);
+            }
+        } else if (targetId) {
+            document.getElementById(targetId)?.scrollIntoView({ behavior: 'smooth' });
+        } else {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
     };
+
+    const goHome = () => navigate('home');
 
     return (
         <footer className="footer" style={{ position: 'relative', overflow: 'hidden' }}>
@@ -37,14 +48,14 @@ function Footer({ setCurrentPage }) {
                 <div className="footer-col">
                     <h4 className="footer-heading">Quick Links</h4>
                     <ul className="footer-links">
-                        <li><a href="#home" onClick={goHome}>Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#why-us">Strengths</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#testimonials">Testimonials</a></li>
-                        <li><a href="#faq">FAQ</a></li>
-                        <li><a href="#location">Location</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#home" onClick={() => navigate('home')}>Home</a></li>
+                        <li><a href="#about" onClick={() => navigate('home', 'about')}>About</a></li>
+                        <li><a href="#services" onClick={() => navigate('home', 'services')}>Services</a></li>
+                        <li><a href="#why-us" onClick={() => navigate('home', 'why-us')}>Strengths</a></li>
+                        <li><a href="#testimonials" onClick={() => navigate('home', 'testimonials')}>Testimonials</a></li>
+                        <li><a href="#faq" onClick={() => navigate('home', 'faq')}>FAQ</a></li>
+                        <li><a href="#location" onClick={() => navigate('home', 'location')}>Location</a></li>
+                        <li><a href="#contact" onClick={() => navigate('home', 'contact')}>Contact</a></li>
                     </ul>
                 </div>
 

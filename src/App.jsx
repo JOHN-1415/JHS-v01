@@ -21,6 +21,10 @@ function App() {
     const [scrollPosition, setScrollPosition] = useState(0);
 
     useEffect(() => {
+        if ('scrollRestoration' in window.history) {
+            window.history.scrollRestoration = 'manual';
+        }
+        
         const revealOnScroll = () => {
             const reveals = document.querySelectorAll('.reveal');
             const windowHeight = window.innerHeight;
@@ -45,10 +49,11 @@ function App() {
         const handlePopstate = (event) => {
             if (currentPage !== 'home') {
                 setCurrentPage('home');
-                // Use a small timeout to let the DOM update before scrolling
-                setTimeout(() => {
-                    window.scrollTo(0, scrollPosition);
-                }, 50);
+                const savedPos = event.state?.scrollPosition || scrollPosition;
+                // Use multiple timeouts to ensure scroll is applied after render/layout
+                [50, 150, 300, 500].forEach(delay => {
+                    setTimeout(() => window.scrollTo(0, savedPos), delay);
+                });
             }
         };
 
@@ -56,7 +61,7 @@ function App() {
         
         // Push state when changing to a subpage to enable back button
         if (currentPage !== 'home') {
-            window.history.pushState({ page: currentPage }, '');
+            window.history.pushState({ page: currentPage, scrollPosition: scrollPosition }, '');
         }
 
         return () => window.removeEventListener('popstate', handlePopstate);
@@ -83,15 +88,23 @@ function App() {
     };
 
     const handleBack = () => {
+        const savedPos = scrollPosition;
         setCurrentPage('home');
+        // Increase timeout and try multiple times to ensure scroll is applied after render
         setTimeout(() => {
-            window.scrollTo(0, scrollPosition);
+            window.scrollTo(0, savedPos);
         }, 50);
+        setTimeout(() => {
+            window.scrollTo(0, savedPos);
+        }, 150);
+        setTimeout(() => {
+            window.scrollTo(0, savedPos);
+        }, 300);
     };
 
     return (
         <div>
-            <Navbar setCurrentPage={setCurrentPage} />
+            <Navbar setCurrentPage={navigateToService} currentPage={currentPage} />
             {currentPage === 'home' ? (
                 <>
                     <Hero />
@@ -111,7 +124,7 @@ function App() {
                 />
             )}
             {currentPage === 'home' && <HashTags setCurrentPage={navigateToService} />}
-            <Footer setCurrentPage={navigateToService} />
+            <Footer setCurrentPage={navigateToService} currentPage={currentPage} />
             <FloatingButtons />
         </div>
     );
