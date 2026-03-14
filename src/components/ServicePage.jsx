@@ -91,7 +91,7 @@ const ALL_PRODUCTS = {
             { name: "Necklace Sets", img: `${BASE}Jewels/jewel-1.WEBP` },
             { name: "Wedding Jewellery", img: `${BASE}Jewels/jewel-2.WEBP` },
         ],
-        subcategories: ["Necklace Sets"],
+        subcategories: ["Premium Jewels"],
     },
     toys: {
         label: "Toys & Kids",
@@ -101,7 +101,7 @@ const ALL_PRODUCTS = {
             { name: "Action Toys", img: `${BASE}Toys & Kids/toys-1.WEBP` },
             { name: "Teddy Bears", img: `${BASE}Toys & Kids/toys-2.WEBP` },
         ],
-        subcategories: ["Action Toys", "Toy Vehicles", "Educational Toys", "Kids Toys", "Teddy Bears", "Plush Toys", "Romantic Gifts"],
+        subcategories: ["Action Toys", "Toy Vehicles", "Educational Toys", "Kids Toys", "Teddy Bears", "Plush Toys"],
     },
     pets: {
         label: "Pet Supplies",
@@ -109,7 +109,7 @@ const ALL_PRODUCTS = {
         waMsg: "Hi! I want to enquire about Pet Supplies at Jeya Hyper Store.",
         items: [
             { name: "Pedigree and KitKat", img: `${BASE}Pet Supplies/pet-1.webp` },
-            { name: "Pet Cares", img: `${BASE}Pet Supplies/pet-2.WEBP` },
+            { name: "Pet Food & Care", img: `${BASE}Pet Supplies/pet-2.WEBP` },
         ],
         subcategories: ["Dog Food", "Cat Food", "Pet Treats"],
     },
