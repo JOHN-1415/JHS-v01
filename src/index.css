@@ -1769,7 +1769,7 @@ h3, h4, h5, h6 {
 }
 
 .footer-links a:hover {
-    color: var(--royal-blue);
+    color: var(--gold);
     padding-left: 4px;
 }
 
@@ -1781,7 +1781,7 @@ h3, h4, h5, h6 {
 }
 
 .footer-dept-list li:hover {
-    color: var(--royal-blue);
+    color: var(--gold);
     transform: translateX(5px);
 }
 
