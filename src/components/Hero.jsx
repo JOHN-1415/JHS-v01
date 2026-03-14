@@ -5,11 +5,16 @@ const BASE = import.meta.env.BASE_URL;
 
 const slideshowImages = [
     'gallery-exterior.WEBP',
-    'gallery-groceries.WEBP',
-    'gallery-jewels.WEBP',
-    'gallery-shoes.WEBP',
-    'cat-gifts-3.WEBP',
-    'cat-stationary-3.WEBP',
+    'Groceries & Food/groceries-1.WEBP',
+    'Household & Cleaning/cleaning-1.WEBP',
+    'Spices & Cooking Essentials/cooking-essentials-1.WEBP',
+    'Stationery & School Supplies/stationery-1.jpg',
+    'Fashion & Accessories/fashion-1.webp',
+    'School Shoes/shoes-1.WEBP',
+    'Gift Items & Decor/gifts-1.WEBP',
+    'Jewels/jewel-1.WEBP',
+    'Toys & Kids/toys-1.WEBP',
+    'Pet Supplies/pet-1.webp',
 ];
 
 function Hero() {
