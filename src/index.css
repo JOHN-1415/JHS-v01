@@ -1058,6 +1058,43 @@ h3, h4, h5, h6 {
     padding: 0 10px;
 }
 
+/* Subcategories Section */
+.service-subcategories {
+    padding: 40px 5%;
+    text-align: center;
+}
+
+.subcategories-title {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    color: var(--navy-dark);
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.subcategories-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.subcategory-tag {
+    background: var(--light-blue-tint);
+    color: var(--navy-dark);
+    padding: 8px 18px;
+    border-radius: var(--radius-full);
+    font-size: 0.85rem;
+    font-weight: 500;
+    border: 1px solid rgba(30, 58, 138, 0.1);
+    transition: var(--trans-fast);
+}
+
+.subcategory-tag:hover {
+    background: var(--navy-dark);
+    color: var(--white);
+}
+
 /* ==========================================================================
    Why Us Section — light blue tint bg
    ========================================================================== */

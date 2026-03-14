@@ -20,14 +20,14 @@ function About() {
                     <h2 className="section-title">A Store Built on Trust & Value</h2>
                     <div className="about-text">
                         <p>
-                            <strong>Jeya Hyper Store</strong> has been serving the families of Srirangam, Trichy for over 4 years. Located in the heart of Somarasampettai, we bring you quality products across 6 departments — all at honest, everyday prices.
+                            <strong>Jeya Hyper Store</strong> has been serving the families of Srirangam, Trichy for over 4 years. Located in the heart of Somarasampettai, we bring you quality products across 10 categories — all at honest, everyday prices.
                         </p>
                     </div>
 
                     <div className="about-features">
                         <div className="feature-check">
                             <span className="check-icon"><i className="fa-solid fa-check"></i></span>
-                            <span>Quality Products across 6 Departments</span>
+                            <span>Quality Products across 10 Categories</span>
                         </div>
                         <div className="feature-check">
                             <span className="check-icon"><i className="fa-solid fa-check"></i></span>

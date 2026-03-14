@@ -77,8 +77,8 @@ function Hero() {
                             <span className="stat-label">Trusted</span>
                         </div>
                         <div className="stat-item">
-                            <span className="stat-number">6</span>
-                            <span className="stat-label">Depts</span>
+                            <span className="stat-number">10+</span>
+                            <span className="stat-label">Categories</span>
                         </div>
                         <div className="stat-item">
                             <span className="stat-number">4.6</span>

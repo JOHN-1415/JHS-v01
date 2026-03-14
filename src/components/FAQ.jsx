@@ -12,7 +12,7 @@ const faqs = [
     },
     {
         q: 'What products do you sell?',
-        a: 'We sell across 6 departments: Groceries, School Shoes, Gifts, Toys, Jewels, and Stationeries. Truly a one-stop shop for your family!',
+        a: 'We offer products across 10 categories: Groceries & Food, Household & Cleaning, Spices & Cooking Essentials, Stationery & School Supplies, Fashion & Accessories, School Shoes, Gift Items & Decor, Jewels, Toys & Kids, and Pet Supplies. Truly a one-stop shop for your family!',
     },
     {
         q: 'Can I place orders on WhatsApp?',

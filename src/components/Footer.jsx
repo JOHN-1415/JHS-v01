@@ -60,14 +60,18 @@ function Footer({ setCurrentPage, currentPage }) {
                 </div>
 
                 <div className="footer-col">
-                    <h4 className="footer-heading">Departments</h4>
+                    <h4 className="footer-heading">Categories</h4>
                     <ul className="footer-dept-list">
-                        <li onClick={() => { setCurrentPage('groceries'); }} style={{ cursor: 'pointer' }}>Groceries</li>
-                        <li onClick={() => { setCurrentPage('shoes'); }} style={{ cursor: 'pointer' }}>Shoes</li>
-                        <li onClick={() => { setCurrentPage('gifts'); }} style={{ cursor: 'pointer' }}>Gifts</li>
-                        <li onClick={() => { setCurrentPage('toys'); }} style={{ cursor: 'pointer' }}>Toys</li>
+                        <li onClick={() => { setCurrentPage('groceries'); }} style={{ cursor: 'pointer' }}>Groceries & Food</li>
+                        <li onClick={() => { setCurrentPage('cleaning'); }} style={{ cursor: 'pointer' }}>Household & Cleaning</li>
+                        <li onClick={() => { setCurrentPage('cooking'); }} style={{ cursor: 'pointer' }}>Spices & Cooking</li>
+                        <li onClick={() => { setCurrentPage('stationery'); }} style={{ cursor: 'pointer' }}>Stationery</li>
+                        <li onClick={() => { setCurrentPage('fashion'); }} style={{ cursor: 'pointer' }}>Fashion & Accessories</li>
+                        <li onClick={() => { setCurrentPage('shoes'); }} style={{ cursor: 'pointer' }}>School Shoes</li>
+                        <li onClick={() => { setCurrentPage('gifts'); }} style={{ cursor: 'pointer' }}>Gift Items & Decor</li>
                         <li onClick={() => { setCurrentPage('jewels'); }} style={{ cursor: 'pointer' }}>Jewels</li>
-                        <li onClick={() => { setCurrentPage('stationary'); }} style={{ cursor: 'pointer' }}>Stationeries</li>
+                        <li onClick={() => { setCurrentPage('toys'); }} style={{ cursor: 'pointer' }}>Toys & Kids</li>
+                        <li onClick={() => { setCurrentPage('pets'); }} style={{ cursor: 'pointer' }}>Pet Supplies</li>
                     </ul>
                 </div>
             </div>

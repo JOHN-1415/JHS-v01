@@ -10,7 +10,7 @@ function WhyUs() {
                     <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
                 </svg>
             ),
-            title: '6 Departments',
+            title: '10+ Categories',
             desc: 'Everything from groceries to jewels, all under one roof.',
         },
         {

@@ -6,68 +6,112 @@ const BASE = import.meta.env.BASE_URL;
 
 const ALL_PRODUCTS = {
     groceries: {
-        label: "Groceries",
-        desc: "From everyday staples to premium spices — all your kitchen needs in one place.",
+        label: "Groceries & Food",
+        desc: "Daily grocery essentials including snacks, packaged foods, and kitchen ingredients for every household.",
         waMsg: "Hi! I want to order Groceries from Jeya Hyper Store.",
         items: [
-            { name: "Pulses and Dry Grains",   img: `${BASE}cat-groceries-1.WEBP` },
-            { name: "Packaged Grocery Essentials",    img: `${BASE}cat-groceries-2.WEBP` },
-            { name: "Instant Foods & Snacks Section",   img: `${BASE}cat-groceries-3.WEBP` },
-            { name: "Spices and Masala Collection",     img: `${BASE}cat-groceries-4.WEBP` },
-            { name: "Snacks and Confectionery Items", img: `${BASE}cat-groceries-5.WEBP` },
-            { name: "Pet Food and Pet Care Supplies",      img: `${BASE}cat-groceries-6.WEBP` },
+            { name: "Packed Foods", img: `${BASE}Groceries & Food/groceries-1.WEBP` },
+            { name: "Instant Foods", img: `${BASE}Groceries & Food/groceries-2.WEBP` },
+            { name: "Biscuits and Snacks", img: `${BASE}Groceries & Food/groceries-3.webp` },
         ],
+        subcategories: ["Biscuits & Cookies", "Snacks & Chips", "Instant Foods", "Packaged Food", "Cooking Ingredients"],
+    },
+    cleaning: {
+        label: "Household & Cleaning",
+        desc: "Reliable cleaning and household products to keep your home fresh, hygienic, and well maintained.",
+        waMsg: "Hi! I want to enquire about Household & Cleaning products at Jeya Hyper Store.",
+        items: [
+            { name: "Dishwash Liquids", img: `${BASE}Household & Cleaning/cleaning-1.WEBP` },
+            { name: "Bathroom Cleaners", img: `${BASE}Household & Cleaning/cleaning-2.WEBP` },
+        ],
+        subcategories: ["Toilet Cleaners", "Floor Cleaners", "Bathroom Cleaners", "Dishwash Liquids"],
+    },
+    cooking: {
+        label: "Spices & Cooking Essentials",
+        desc: "Authentic spices and cooking ingredients that add rich flavor and aroma to every meal.",
+        waMsg: "Hi! I want to enquire about Spices & Cooking Essentials at Jeya Hyper Store.",
+        items: [
+            { name: "Food Ingredients", img: `${BASE}Spices & Cooking Essentials/cooking-essentials-1.WEBP` },
+            { name: "Masala & Spice Powders", img: `${BASE}Spices & Cooking Essentials/cooking-essentials-2.WEBP` },
+            { name: "Fries and Pickles", img: `${BASE}Spices & Cooking Essentials/cooking-essentials-3.WEBP` },
+        ],
+        subcategories: ["Masala & Spice Powders", "Cooking Mixes", "Food Ingredients"],
+    },
+    stationery: {
+        label: "Stationery & School Supplies",
+        desc: "Essential stationery items and school supplies for students, offices, and everyday use.",
+        waMsg: "Hi! I want to enquire about Stationery at Jeya Hyper Store.",
+        items: [
+            { name: "Pen and Pencils", img: `${BASE}Stationery & School Supplies/stationery-2.WEBP` },
+        ],
+        subcategories: ["Pens & Pencils", "Erasers & Sharpeners", "Notebooks", "School Accessories"],
+    },
+    fashion: {
+        label: "Fashion & Accessories",
+        desc: "Stylish fashion accessories including cloths, handbags, belts, and everyday essentials for men and women.",
+        waMsg: "Hi! I want to enquire about Fashion & Accessories at Jeya Hyper Store.",
+        items: [
+            { name: "Cloths", img: `${BASE}Fashion & Accessories/fashion-1.webp` },
+            { name: "Handbags", img: `${BASE}Fashion & Accessories/fashion-2.webp` },
+            { name: "Belts", img: `${BASE}Fashion & Accessories/fashion-3.webp` },
+        ],
+        subcategories: ["Handbags", "Belts", "Fashion Accessories", "Cloths"],
     },
     shoes: {
-        label: "Shoes",
-        desc: "Durable school shoes for children from KG to Class 12, in all sizes.",
-        waMsg: "Hi! I want to enquire about Shoes at Jeya Hyper Store.",
+        label: "School Shoes",
+        desc: "Comfortable and durable shoes for school students.",
+        waMsg: "Hi! I want to enquire about School Shoes at Jeya Hyper Store.",
         items: [
-            { name: "School Shoes Collection", img: `${BASE}cat-shoes-1.WEBP` },
-            { name: "Black School Shoes", img: `${BASE}cat-shoes-2.WEBP` },
-            { name: "White School Shoes",       img: `${BASE}cat-shoes-3.WEBP` },
+            { name: "School Shoes", img: `${BASE}School Shoes/shoes-1.WEBP` },
+            { name: "Black Shoes", img: `${BASE}School Shoes/shoes-2.WEBP` },
+            { name: "White Shoes", img: `${BASE}School Shoes/shoes-3.WEBP` },
         ],
+        subcategories: ["School Shoes for all standards"],
     },
     gifts: {
-        label: "Gifts",
-        desc: "Beautiful gift hampers, seasonal gifts and wrapping — perfect for any occasion.",
-        waMsg: "Hi! I am looking for Gift items at Jeya Hyper Store.",
+        label: "Gift Items & Decor",
+        desc: "Beautiful gift items and decorative pieces perfect for special occasions, celebrations, and home decoration.",
+        waMsg: "Hi! I am looking for Gift Items at Jeya Hyper Store.",
         items: [
-            { name: "Gift Box Decoration",         img: `${BASE}cat-gifts-1.WEBP` },
-            { name: "Assorted Gift & Decorative Items Collection",   img: `${BASE}cat-gifts-2.webp` },
-            { name: "Couple Figurine Gift Frames",          img: `${BASE}cat-gifts-3.WEBP` },
-            { name: "Wall Clock Collection",     img: `${BASE}cat-gifts-4.WEBP` },
+            { name: "Decorative Gifts", img: `${BASE}Gift Items & Decor/gifts-1.WEBP` },
+            { name: "Mini Gift Sets", img: `${BASE}Gift Items & Decor/gifts-2.webp` },
+            { name: "Showpieces", img: `${BASE}Gift Items & Decor/gifts-3.webp` },
+            { name: "Wall Clock Collections", img: `${BASE}Gift Items & Decor/gifts-4.WEBP` },
+            { name: "Birthday Candles", img: `${BASE}Gift Items & Decor/decors-1.webp` },
+            { name: "Party Decorations", img: `${BASE}Gift Items & Decor/decors-2.WEBP` },
+            { name: "Decorative Wall Art", img: `${BASE}Gift Items & Decor/decors-3.webp` },
         ],
-    },
-    toys: {
-        label: "Toys",
-        desc: "Educational toys, board games and outdoor play items for all ages.",
-        waMsg: "Hi! I want to enquire about Toys at Jeya Hyper Store.",
-        items: [
-            { name: "Toys and Teddy Bear Collection",          img: `${BASE}cat-toys-1.WEBP` },
-            { name: "Kids Toys",          img: `${BASE}cat-toys-2.WEBP` },
-            { name: "Decorative Teddy Bear Gift Set",          img: `${BASE}cat-toys-3.WEBP` },
-        ],
+        subcategories: ["Decorative Gifts", "Showpieces", "Mini Gift Sets", "Love Gifts", "Party Poppers", "Confetti", "Birthday Candles", "Party Decorations"],
     },
     jewels: {
         label: "Jewels",
-        desc: "Elegant imitation jewellery, gold-plated sets, bangles and earrings.",
-        waMsg: "Hi! I am interested in Jewellery items at Jeya Hyper Store.",
+        desc: "Elegant imitation jewellery and fashionable ornaments designed for everyday wear and special occasions.",
+        waMsg: "Hi! I want to enquire about Jewellery at Jeya Hyper Store.",
         items: [
-            { name: "Traditional Necklace Collection",     img: `${BASE}cat-jewels-1.WEBP` },
-            { name: "Jewellery Display Set",     img: `${BASE}cat-jewels-2.WEBP` },
+            { name: "Necklace Sets", img: `${BASE}Jewels/jewel-1.WEBP` },
+            { name: "Wedding Jewellery", img: `${BASE}Jewels/jewel-2.WEBP` },
         ],
+        subcategories: ["Necklace Sets"],
     },
-    stationary: {
-        label: "Stationeries",
-        desc: "Everything students need — notebooks, pens, geometry boxes and art supplies.",
-        waMsg: "Hi! I need Stationery items from Jeya Hyper Store.",
+    toys: {
+        label: "Toys & Kids",
+        desc: "Fun and engaging toys for children of all ages that inspire creativity, learning, and play.",
+        waMsg: "Hi! I want to enquire about Toys at Jeya Hyper Store.",
         items: [
-            { name: "Bathroom & Toilet Cleaning Products", img: `${BASE}cat-stationary-1.WEBP` },
-            { name: "Home Care and Daily Essentials Section",    img: `${BASE}cat-stationary-2.WEBP` },
-            { name: "Birthday and Party Decoration Items",                img: `${BASE}cat-stationary-3.WEBP` },
-            { name: "School Stationery",                                   img: `${BASE}cat-stationary-4.WEBP` },
+            { name: "Action Toys", img: `${BASE}Toys & Kids/toys-1.WEBP` },
+            { name: "Teddy Bears", img: `${BASE}Toys & Kids/toys-2.WEBP` },
         ],
+        subcategories: ["Action Toys", "Toy Vehicles", "Educational Toys", "Kids Toys", "Teddy Bears", "Plush Toys", "Romantic Gifts"],
+    },
+    pets: {
+        label: "Pet Supplies",
+        desc: "Quality food and essentials for pets, ensuring proper nutrition and care for your furry companions.",
+        waMsg: "Hi! I want to enquire about Pet Supplies at Jeya Hyper Store.",
+        items: [
+            { name: "Pedigree and KitKat", img: `${BASE}Pet Supplies/pet-1.webp` },
+            { name: "Pet Cares", img: `${BASE}Pet Supplies/pet-2.WEBP` },
+        ],
+        subcategories: ["Dog Food", "Cat Food", "Pet Treats"],
     },
 };
 
@@ -92,7 +136,6 @@ function ServicePage({ deptId, onBack }) {
                         <span> / </span>
                         <span>{dept.label}</span>
                     </div>
-
 
                     <h1 className="service-page-title">{dept.label}</h1>
                     <p className="service-page-desc">{dept.desc}</p>
@@ -137,6 +180,18 @@ function ServicePage({ deptId, onBack }) {
                     </div>
                 ))}
             </div>
+
+            {/* Subcategories */}
+            {dept.subcategories && dept.subcategories.length > 0 && (
+                <div className="service-subcategories">
+                    <h3 className="subcategories-title">Subcategories</h3>
+                    <div className="subcategories-list">
+                        {dept.subcategories.map((sub, i) => (
+                            <span className="subcategory-tag" key={i}>{sub}</span>
+                        ))}
+                    </div>
+                </div>
+            )}
         </div>
     );
 }
