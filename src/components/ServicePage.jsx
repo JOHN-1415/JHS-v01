@@ -27,7 +27,7 @@ const ALL_PRODUCTS = {
             { name: "Bathroom Cleaners", img: `${BASE}Household & Cleaning/cleaning-2.jpg` },
             { name: "Water Bottles and Cooking Wares", img: `${BASE}Household & Cleaning/cleaning-3.jpeg` },
         ],
-        subcategories: ["Toilet Cleaners", "Floor Cleaners", "Bathroom Cleaners", "Dishwash Liquids"],
+        subcategories: ["Toilet Cleaners", "Floor Cleaners", "Bathroom Cleaners", "Dishwash Liquids", "Water Bottles", "Cooking wares"],
     },
     cooking: {
         label: "Spices & Cooking Essentials",
@@ -60,7 +60,7 @@ const ALL_PRODUCTS = {
             { name: "Notebooks", img: `${BASE}Stationery & School Supplies/stationery-3.jpeg` },
             { name: "School Bags", img: `${BASE}Stationery & School Supplies/stationery-4.jpeg` },
         ],
-        subcategories: ["Pens & Pencils", "Erasers & Sharpeners", "Notebooks", "School Accessories"],
+        subcategories: ["Pens & Pencils", "Erasers & Sharpeners", "Notebooks", "School Accessories", "School Bags"],
     },
     fashion: {
         label: "Fashion & Accessories",
@@ -83,7 +83,7 @@ const ALL_PRODUCTS = {
             { name: "Casual shoes and Chappels", img: `${BASE}School Shoes/shoes-4.jpeg` },
             { name: "Slippers and Women's Footwear", img: `${BASE}School Shoes/shoes-5.jpeg` },
         ],
-        subcategories: ["School Shoes", "Casual Shoes", "Chappels", "Slippers", "Women's Footwear"],
+        subcategories: ["School Shoes", "Casual Shoes", "Chappels", "Slippers", "Footwears"],
     },
     gifts: {
         label: "Gift Items & Decor",
@@ -120,7 +120,7 @@ const ALL_PRODUCTS = {
             { name: "Action Toys", img: `${BASE}Toys & Kids/toys-2.jpg` },
             { name: "Carrom Boards", img: `${BASE}Toys & Kids/toys-3.jpeg` },
         ],
-        subcategories: ["Action Toys", "Toy Vehicles", "Educational Toys", "Kids Toys", "Teddy Bears", "Plush Toys"],
+        subcategories: ["Action Toys", "Toy Vehicles", "Kids Toys", "Teddy Bears", "Plush Toys"],
     },
     pets: {
         label: "Pet Supplies",
