@@ -697,8 +697,8 @@ h3, h4, h5, h6 {
 
 .experience-badge {
     position: absolute;
-    bottom: -20px;
-    right: -20px;
+    bottom: 20px;
+    right: 20px;
     background: var(--gold);
     color: var(--dark);
     width: 120px;

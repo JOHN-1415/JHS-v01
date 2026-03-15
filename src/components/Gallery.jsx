@@ -4,17 +4,16 @@ import SketchBackground from './SketchBackground';
 const BASE = import.meta.env.BASE_URL;
 
 const galleryItems = [
-    { src: `${BASE}gallery-exterior.WEBP`, caption: 'Store Front Exterior', featured: true },
-    { src: `${BASE}Groceries & Food/groceries-1.WEBP`, caption: 'Groceries & Food', featured: false },
-    { src: `${BASE}Household & Cleaning/cleaning-1.WEBP`, caption: 'Household & Cleaning', featured: false },
-    { src: `${BASE}Spices & Cooking Essentials/cooking-essentials-1.WEBP`, caption: 'Spices & Cooking Essentials', featured: false },
+    { src: `${BASE}gallery-exterior.jpg`, caption: 'Store Front Exterior', featured: true },
+    { src: `${BASE}Groceries & Food/groceries-1.jpg`, caption: 'Groceries & Food', featured: false },
+    { src: `${BASE}Household & Cleaning/cleaning-1.jpg`, caption: 'Household & Cleaning', featured: false },
+    { src: `${BASE}Spices & Cooking Essentials/cooking-essentials-1.jpg`, caption: 'Spices & Cooking Essentials', featured: false },
     { src: `${BASE}Stationery & School Supplies/stationery-1.jpg`, caption: 'Stationery & School Supplies', featured: false },
-    { src: `${BASE}Fashion & Accessories/fashion-1.webp`, caption: 'Fashion - Handbags', featured: false },
-    { src: `${BASE}Fashion & Accessories/fashion-2.webp`, caption: 'Fashion - Belts', featured: false },
-    { src: `${BASE}School Shoes/shoes-1.WEBP`, caption: 'School Shoes', featured: false },
-    { src: `${BASE}Gift Items & Decor/gifts-1.WEBP`, caption: 'Gift Items & Decor', featured: false },
-    { src: `${BASE}Jewels/jewel-1.WEBP`, caption: 'Jewels', featured: false },
-    { src: `${BASE}Toys & Kids/toys-1.WEBP`, caption: 'Toys & Kids', featured: false },
+    { src: `${BASE}Fashion & Accessories/fashion-1.webp`, caption: 'Fashion Accessories', featured: false },
+    { src: `${BASE}School Shoes/shoes-1.jpg`, caption: 'School Shoes', featured: false },
+    { src: `${BASE}Gift Items & Decor/gifts-1.jpg`, caption: 'Gift Items & Decor', featured: false },
+    { src: `${BASE}Jewels/jewel-1.jpg`, caption: 'Jewels', featured: false },
+    { src: `${BASE}Toys & Kids/toys-1.jpg`, caption: 'Toys & Kids', featured: false },
     { src: `${BASE}Pet Supplies/pet-1.webp`, caption: 'Pet Supplies', featured: false },
 ];
 

@@ -32,7 +32,7 @@ const SERVICES = [
     {
         id: "fashion",
         label: "Fashion & Accessories",
-        coverImg: `${BASE}Fashion & Accessories/fashion-1.jpg`,
+        coverImg: `${BASE}Fashion & Accessories/fashion-1.webp`,
         desc: "Stylish fashion accessories including handbags and belts.",
     },
     {
@@ -62,7 +62,7 @@ const SERVICES = [
     {
         id: "pets",
         label: "Pet Supplies",
-        coverImg: `${BASE}Pet Supplies/pet-1.jpg`,
+        coverImg: `${BASE}Pet Supplies/pet-1.webp`,
         desc: "Quality food and essentials for your furry companions.",
     },
 ];

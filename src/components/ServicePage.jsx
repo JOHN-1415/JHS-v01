@@ -12,7 +12,7 @@ const ALL_PRODUCTS = {
         items: [
             { name: "Packed Foods", img: `${BASE}Groceries & Food/groceries-1.jpg` },
             { name: "Instant Foods", img: `${BASE}Groceries & Food/groceries-2.jpg` },
-            { name: "Biscuits and Snacks", img: `${BASE}Groceries & Food/groceries-3.jpg` },
+            { name: "Biscuits and Snacks", img: `${BASE}Groceries & Food/groceries-3.webp` },
         ],
         subcategories: ["Biscuits & Cookies", "Snacks & Chips", "Instant Foods", "Packaged Food", "Cooking Ingredients"],
     },
@@ -62,7 +62,8 @@ const ALL_PRODUCTS = {
         desc: "Stylish fashion accessories including handbags, belts, and everyday essentials for men and women.",
         waMsg: "Hi! I want to enquire about Fashion & Accessories at Jeya Hyper Store.",
         items: [
-            { name: "Fashion & Accessories", img: `${BASE}Fashion & Accessories/fashion-1.jpg` },
+            { name: "Handbags", img: `${BASE}Fashion & Accessories/fashion-1.webp` },
+            { name: "Belts", img: `${BASE}Fashion & Accessories/fashion-2.webp` },
         ],
         subcategories: ["Handbags", "Belts", "Fashion Accessories"],
     },
@@ -117,7 +118,7 @@ const ALL_PRODUCTS = {
         desc: "Quality food and essentials for pets, ensuring proper nutrition and care for your furry companions.",
         waMsg: "Hi! I want to enquire about Pet Supplies at Jeya Hyper Store.",
         items: [
-            { name: "Pedigree and KitKat", img: `${BASE}Pet Supplies/pet-1.jpg` },
+            { name: "Pedigree and KitKat", img: `${BASE}Pet Supplies/pet-1.webp` },
             { name: "Pet Food & Care", img: `${BASE}Pet Supplies/pet-2.jpg` },
         ],
         subcategories: ["Dog Food", "Cat Food", "Pet Treats"],
