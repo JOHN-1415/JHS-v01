@@ -21,6 +21,7 @@ function App() {
     const [scrollPosition, setScrollPosition] = useState(0);
     // pendingScrollTo: null = do nothing, 0 = go to top, number > 0 = restore to that position
     const pendingScrollTo = useRef(null);
+    const isJumpedNavigation = useRef(false);
 
     useEffect(() => {
         if ('scrollRestoration' in window.history) {
@@ -50,8 +51,13 @@ function App() {
     useEffect(() => {
         const handlePopstate = (event) => {
             if (currentPage !== 'home') {
-                const savedPos = event.state?.scrollPosition ?? 0;
-                pendingScrollTo.current = savedPos;
+                if (isJumpedNavigation.current) {
+                    const servicesEl = document.getElementById('services');
+                    pendingScrollTo.current = servicesEl ? servicesEl.offsetTop : 0;
+                } else {
+                    const savedPos = event.state?.scrollPosition ?? 0;
+                    pendingScrollTo.current = savedPos;
+                }
                 setCurrentPage('home');
             }
         };
@@ -89,12 +95,19 @@ function App() {
     }, [currentPage]);
 
     const navigateToService = (id) => {
-        const currentScrollY = window.scrollY;
-        // Save current home scroll position in the current history entry
-        window.history.replaceState({ page: 'home', scrollPosition: currentScrollY }, '');
-        // Push a new entry for the service page
-        window.history.pushState({ page: id }, '');
-        setScrollPosition(currentScrollY);
+        if (currentPage === 'home') {
+            const currentScrollY = window.scrollY;
+            // Save current home scroll position in the current history entry
+            window.history.replaceState({ page: 'home', scrollPosition: currentScrollY }, '');
+            // Push a new entry for the service page
+            window.history.pushState({ page: id }, '');
+            setScrollPosition(currentScrollY);
+            isJumpedNavigation.current = false;
+        } else {
+            // Jumping from one service to another — replace history instead of pushing
+            window.history.replaceState({ page: id }, '');
+            isJumpedNavigation.current = true;
+        }
         pendingScrollTo.current = 0;
         setCurrentPage(id);
     };
