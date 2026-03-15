@@ -4,17 +4,17 @@ import SketchBackground from './SketchBackground';
 const BASE = import.meta.env.BASE_URL;
 
 const slideshowImages = [
-    'gallery-exterior.WEBP',
-    'Groceries & Food/groceries-1.WEBP',
-    'Household & Cleaning/cleaning-1.WEBP',
-    'Spices & Cooking Essentials/cooking-essentials-1.WEBP',
+    'gallery-exterior.jpg',
+    'Groceries & Food/groceries-1.jpg',
+    'Household & Cleaning/cleaning-1.jpg',
+    'Spices & Cooking Essentials/cooking-essentials-1.jpg',
     'Stationery & School Supplies/stationery-1.jpg',
-    'Fashion & Accessories/fashion-1.webp',
-    'School Shoes/shoes-1.WEBP',
-    'Gift Items & Decor/gifts-1.WEBP',
-    'Jewels/jewel-1.WEBP',
-    'Toys & Kids/toys-1.WEBP',
-    'Pet Supplies/pet-1.webp',
+    'Fashion & Accessories/fashion-1.jpg',
+    'School Shoes/shoes-1.jpg',
+    'Gift Items & Decor/gifts-1.jpg',
+    'Jewels/jewel-1.jpg',
+    'Toys & Kids/toys-1.jpg',
+    'Pet Supplies/pet-1.jpg',
 ];
 
 function Hero() {
@@ -96,7 +96,7 @@ function Hero() {
                     </div>
                 </div>
                 <div className="hero-image reveal">
-                    <img src={`${BASE}gallery-exterior.WEBP`} alt="Jeya Hyper Store" className="hero-store-img" />
+                    <img src={`${BASE}gallery-exterior.jpg`} alt="Jeya Hyper Store" className="hero-store-img" />
                 </div>
             </div>
         </section>

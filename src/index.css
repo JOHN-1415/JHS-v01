@@ -2166,6 +2166,7 @@ h3, h4, h5, h6 {
 
     .hero {
         padding-top: 100px;
+        padding-bottom: 40px;
     }
 
     .hero-logo {

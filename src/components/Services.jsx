@@ -8,19 +8,19 @@ const SERVICES = [
     {
         id: "groceries",
         label: "Groceries & Food",
-        coverImg: `${BASE}Groceries & Food/groceries-1.WEBP`,
+        coverImg: `${BASE}Groceries & Food/groceries-1.jpg`,
         desc: "Daily grocery essentials including snacks, packaged foods, and kitchen ingredients.",
     },
     {
         id: "cleaning",
         label: "Household & Cleaning",
-        coverImg: `${BASE}Household & Cleaning/cleaning-1.WEBP`,
+        coverImg: `${BASE}Household & Cleaning/cleaning-1.jpg`,
         desc: "Reliable cleaning and household products to keep your home fresh and hygienic.",
     },
     {
         id: "cooking",
         label: "Spices & Cooking Essentials",
-        coverImg: `${BASE}Spices & Cooking Essentials/cooking-essentials-1.WEBP`,
+        coverImg: `${BASE}Spices & Cooking Essentials/cooking-essentials-1.jpg`,
         desc: "Authentic spices and cooking ingredients that add rich flavor to every meal.",
     },
     {
@@ -32,37 +32,37 @@ const SERVICES = [
     {
         id: "fashion",
         label: "Fashion & Accessories",
-        coverImg: `${BASE}Fashion & Accessories/fashion-1.webp`,
+        coverImg: `${BASE}Fashion & Accessories/fashion-1.jpg`,
         desc: "Stylish fashion accessories including handbags and belts.",
     },
     {
         id: "shoes",
         label: "School Shoes",
-        coverImg: `${BASE}School Shoes/shoes-1.WEBP`,
+        coverImg: `${BASE}School Shoes/shoes-1.jpg`,
         desc: "Comfortable and durable shoes for school students.",
     },
     {
         id: "gifts",
         label: "Gift Items & Decor",
-        coverImg: `${BASE}Gift Items & Decor/gifts-1.WEBP`,
+        coverImg: `${BASE}Gift Items & Decor/gifts-1.jpg`,
         desc: "Beautiful gift items and decorative pieces for special occasions.",
     },
     {
         id: "jewels",
         label: "Jewels",
-        coverImg: `${BASE}Jewels/jewel-1.WEBP`,
+        coverImg: `${BASE}Jewels/jewel-1.jpg`,
         desc: "Elegant imitation jewellery designed for everyday wear and special occasions.",
     },
     {
         id: "toys",
         label: "Toys & Kids",
-        coverImg: `${BASE}Toys & Kids/toys-1.WEBP`,
+        coverImg: `${BASE}Toys & Kids/toys-1.jpg`,
         desc: "Fun and engaging toys for children of all ages.",
     },
     {
         id: "pets",
         label: "Pet Supplies",
-        coverImg: `${BASE}Pet Supplies/pet-1.webp`,
+        coverImg: `${BASE}Pet Supplies/pet-1.jpg`,
         desc: "Quality food and essentials for your furry companions.",
     },
 ];
