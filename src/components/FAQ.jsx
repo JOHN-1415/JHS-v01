@@ -8,7 +8,7 @@ const faqs = [
     },
     {
         q: 'Where is Jeya Hyper Store located?',
-        a: 'We are at Somarasampettai, opposite Holy Cross School, Vayalur Road, Shanmuga Nagar, Srirangam, Trichy — 620102.',
+        a: 'We are at RJ7P+37V, Vayalur Rd, Somarasempettai, Tiruchirappalli, Tamil Nadu 620102.',
     },
     {
         q: 'What products do you sell?',

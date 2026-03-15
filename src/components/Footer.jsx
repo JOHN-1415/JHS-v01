@@ -28,7 +28,7 @@ function Footer({ setCurrentPage, currentPage }) {
                         <img src={`${import.meta.env.BASE_URL}logo-store-name.png`} alt="Jeya Hyper Store" className="footer-logo-combined" />
                     </div>
                     <p className="footer-desc">
-                        Your trusted neighbourhood store in Srirangam, Trichy. Quality products, honest prices, and warm service — all under one roof.
+                        Your trusted neighbourhood store in Somarasampettai, Trichy. Quality products, honest prices, and warm service — all under one roof.
                     </p>
                     <div className="social-links">
                         <a href="https://www.facebook.com/profile.php?id=61569404496169" target="_blank" rel="noreferrer" className="social-icon" aria-label="Facebook"><i className="fa-brands fa-facebook-f"></i></a>
@@ -77,7 +77,7 @@ function Footer({ setCurrentPage, currentPage }) {
                 </div>
             </div>
             <div className="footer-bottom" style={{ position: 'relative', zIndex: 1 }}>
-                <p>&copy; 2026 Jeya Hyper Store, Srirangam, Trichy. All rights reserved.</p>
+                <p>&copy; 2026 Jeya Hyper Store, Somarasampettai, Trichy. All rights reserved.</p>
                 <span>Crafted with passion in Trichy  |  Website by <a href="https://javia.studio/" target="_blank" rel="noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>jAvia</a></span>
             </div>
         </footer>

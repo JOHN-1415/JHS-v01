@@ -48,14 +48,13 @@ const ALL_PRODUCTS = {
     },
     fashion: {
         label: "Fashion & Accessories",
-        desc: "Stylish fashion accessories including cloths, handbags, belts, and everyday essentials for men and women.",
+        desc: "Stylish fashion accessories including handbags, belts, and everyday essentials for men and women.",
         waMsg: "Hi! I want to enquire about Fashion & Accessories at Jeya Hyper Store.",
         items: [
-            { name: "Cloths", img: `${BASE}Fashion & Accessories/fashion-1.webp` },
-            { name: "Handbags", img: `${BASE}Fashion & Accessories/fashion-2.webp` },
-            { name: "Belts", img: `${BASE}Fashion & Accessories/fashion-3.webp` },
+            { name: "Handbags", img: `${BASE}Fashion & Accessories/fashion-1.webp` },
+            { name: "Belts", img: `${BASE}Fashion & Accessories/fashion-2.webp` },
         ],
-        subcategories: ["Handbags", "Belts", "Fashion Accessories", "Cloths"],
+        subcategories: ["Handbags", "Belts", "Fashion Accessories"],
     },
     shoes: {
         label: "School Shoes",

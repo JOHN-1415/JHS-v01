@@ -30,7 +30,7 @@ function Location() {
                             <div className="info-icon"><i className="fa-solid fa-location-dot"></i></div>
                             <div className="info-text">
                                 <h4>Address</h4>
-                                <p>Somarasampettai, Opp. Holy Cross School,<br />Vayalur Road, Srirangam — 620102</p>
+                                <p>RJ7P+37V, Vayalur Rd, Somarasempettai,<br />Tiruchirappalli, Tamil Nadu 620102</p>
                             </div>
                         </div>
 

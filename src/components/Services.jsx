@@ -33,7 +33,7 @@ const SERVICES = [
         id: "fashion",
         label: "Fashion & Accessories",
         coverImg: `${BASE}Fashion & Accessories/fashion-1.webp`,
-        desc: "Stylish fashion accessories including cloths, handbags, and belts.",
+        desc: "Stylish fashion accessories including handbags and belts.",
     },
     {
         id: "shoes",
@@ -87,7 +87,6 @@ function Services({ setCurrentPage }) {
                             service={service}
                             onClick={() => {
                                 setCurrentPage(service.id);
-                                window.scrollTo(0, 0);
                             }}
                         />
                     ))}

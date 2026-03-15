@@ -50,21 +50,15 @@ function App() {
     useEffect(() => {
         const handlePopstate = (event) => {
             if (currentPage !== 'home') {
-                const savedPos = event.state?.scrollPosition || scrollPosition;
+                const savedPos = event.state?.scrollPosition ?? 0;
                 pendingScrollTo.current = savedPos;
                 setCurrentPage('home');
             }
         };
 
         window.addEventListener('popstate', handlePopstate);
-        
-        // Push state when changing to a subpage to enable back button
-        if (currentPage !== 'home') {
-            window.history.pushState({ page: currentPage, scrollPosition: scrollPosition }, '');
-        }
-
         return () => window.removeEventListener('popstate', handlePopstate);
-    }, [currentPage, scrollPosition]);
+    }, [currentPage]);
 
     // This useEffect fires AFTER React has rendered the new page content
     useEffect(() => {
@@ -95,14 +89,19 @@ function App() {
     }, [currentPage]);
 
     const navigateToService = (id) => {
-        setScrollPosition(window.scrollY);
+        const currentScrollY = window.scrollY;
+        // Save current home scroll position in the current history entry
+        window.history.replaceState({ page: 'home', scrollPosition: currentScrollY }, '');
+        // Push a new entry for the service page
+        window.history.pushState({ page: id }, '');
+        setScrollPosition(currentScrollY);
         pendingScrollTo.current = 0;
         setCurrentPage(id);
     };
 
     const handleBack = () => {
-        pendingScrollTo.current = scrollPosition;
-        setCurrentPage('home');
+        // Use browser back to properly pop the history entry
+        window.history.back();
     };
 
     return (

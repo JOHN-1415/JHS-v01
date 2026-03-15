@@ -81,7 +81,7 @@ function Contact() {
                                 <div className="method-icon"><i className="fa-solid fa-location-dot"></i></div>
                                 <div className="method-text">
                                     <h4>Address</h4>
-                                    <span>Somarasampettai, Srirangam, Trichy</span>
+                                    <span>RJ7P+37V, Vayalur Rd, Somarasempettai, Tiruchirappalli, Tamil Nadu 620102</span>
                                 </div>
                             </div>
                         </div>

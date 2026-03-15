@@ -61,7 +61,7 @@ function Hero() {
                     </div>
                     <p className="hero-subtitle">Your One-Stop Shop in Trichy</p>
                     <p className="hero-desc">
-                        From fresh groceries to school shoes, gifts, toys, jewels and stationeries — everything your family needs, all under one roof in Srirangam.
+                        From fresh groceries to school shoes, gifts, toys, jewels and stationeries — everything your family needs, all under one roof in Somarasampettai.
                     </p>
                     <div className="hero-buttons">
                         <a href="#location" className="btn btn-lime">
@@ -79,7 +79,7 @@ function Hero() {
                     <div className="hero-stats">
                         <div className="stat-item">
                             <span className="stat-number">4+</span>
-                            <span className="stat-label">Trusted</span>
+                            <span className="stat-label">Trusted Years</span>
                         </div>
                         <div className="stat-item">
                             <span className="stat-number">10+</span>
