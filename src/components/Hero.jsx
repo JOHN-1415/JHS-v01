@@ -9,12 +9,12 @@ const slideshowImages = [
     'Household & Cleaning/cleaning-1.jpg',
     'Spices & Cooking Essentials/cooking-essentials-1.jpg',
     'Stationery & School Supplies/stationery-1.jpg',
-    'Fashion & Accessories/fashion-1.jpg',
+    'Fashion & Accessories/fashion-1.webp',
     'School Shoes/shoes-1.jpg',
     'Gift Items & Decor/gifts-1.jpg',
     'Jewels/jewel-1.jpg',
     'Toys & Kids/toys-1.jpg',
-    'Pet Supplies/pet-1.jpg',
+    'Pet Supplies/pet-1.webp',
 ];
 
 function Hero() {
