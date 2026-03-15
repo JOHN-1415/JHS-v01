@@ -4,7 +4,7 @@ import SketchBackground from './SketchBackground';
 const faqs = [
     {
         q: 'What are your store timings?',
-        a: 'We are open every day from 8:00 AM to 10:00 PM, including Sundays and public holidays.',
+        a: 'We are open every day from 8:00 AM to 10:00 PM.',
     },
     {
         q: 'Where is Jeya Hyper Store located?',
