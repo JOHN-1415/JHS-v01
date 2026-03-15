@@ -465,8 +465,8 @@ h3, h4, h5, h6 {
 .hamburger {
     display: none;
     font-size: 1.2rem;
-    color: var(--white);
-    background: var(--royal-blue);
+    color: var(--royal-blue);
+    background: var(--white);
     width: 40px;
     height: 40px;
     display: none; /* Controlled by media query */
@@ -2136,13 +2136,19 @@ h3, h4, h5, h6 {
         right: -100%;
         width: 100%;
         height: 100vh;
-        background: #0a1628;
+        background: var(--white);
         flex-direction: column;
         padding: 100px 30px 30px;
         gap: 25px;
         transition: right var(--trans-normal);
         box-shadow: none;
         z-index: 1001;
+    }
+
+    .nav-menu .nav-link {
+        color: var(--royal-blue);
+        font-size: 1.1rem;
+        font-weight: 700;
     }
 
     .nav-menu.active {
@@ -2154,7 +2160,7 @@ h3, h4, h5, h6 {
         top: 24px;
         right: 24px;
         font-size: 2rem;
-        color: white;
+        color: var(--royal-blue);
         cursor: pointer;
         display: block;
     }
