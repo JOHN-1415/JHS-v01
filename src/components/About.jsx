@@ -52,6 +52,10 @@ function About() {
                             <h4>Our Mission</h4>
                             <p>To offer a wide range of quality products — from daily groceries to school essentials, gifts, toys, jewellery and stationery — with warm service, honest pricing, and a shopping experience that feels like home.</p>
                         </div>
+                        <div className="vm-card goals">
+                            <h4>Our Goals</h4>
+                            <p>To continuously expand our offerings, enhance our digital presence, and maintain the highest standards of quality and service for the Somarasampettai community.</p>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -13,6 +13,7 @@ const TAGS = [
     { label: "pet supplies srirangam", dept: "pets" },
     { label: "supermarket trichy", dept: null },
     { label: "departmental store somarasampettai", dept: null },
+    { label: "foot wears trichy", dept: "shoes" },
 ];
 
 function HashTags({ setCurrentPage }) {

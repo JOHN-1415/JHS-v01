@@ -13,8 +13,10 @@ const ALL_PRODUCTS = {
             { name: "Packed Foods", img: `${BASE}Groceries & Food/groceries-1.jpg` },
             { name: "Instant Foods", img: `${BASE}Groceries & Food/groceries-2.jpg` },
             { name: "Biscuits and Snacks", img: `${BASE}Groceries & Food/groceries-3.webp` },
+            { name: "Ice Creams", img: `${BASE}Groceries & Food/groceries-4.jpeg` },
+            { name: "Frozen Foods", img: `${BASE}Groceries & Food/groceries-5.jpeg` },
         ],
-        subcategories: ["Biscuits & Cookies", "Snacks & Chips", "Instant Foods", "Packaged Food", "Cooking Ingredients"],
+        subcategories: ["Biscuits & Cookies", "Snacks & Chips", "Instant Foods", "Packaged Food", "Cooking Ingredients", "Ice Creams", "Frozen Foods"],
     },
     cleaning: {
         label: "Household & Cleaning",
@@ -23,6 +25,7 @@ const ALL_PRODUCTS = {
         items: [
             { name: "Dishwash Liquids", img: `${BASE}Household & Cleaning/cleaning-1.jpg` },
             { name: "Bathroom Cleaners", img: `${BASE}Household & Cleaning/cleaning-2.jpg` },
+            { name: "Water Bottles and Cooking Wares", img: `${BASE}Household & Cleaning/cleaning-3.jpeg` },
         ],
         subcategories: ["Toilet Cleaners", "Floor Cleaners", "Bathroom Cleaners", "Dishwash Liquids"],
     },
@@ -54,6 +57,8 @@ const ALL_PRODUCTS = {
         waMsg: "Hi! I want to enquire about Stationery at Jeya Hyper Store.",
         items: [
             { name: "Pen and Pencils", img: `${BASE}Stationery & School Supplies/stationery-2.jpg` },
+            { name: "Notebooks", img: `${BASE}Stationery & School Supplies/stationery-3.jpeg` },
+            { name: "School Bags", img: `${BASE}Stationery & School Supplies/stationery-4.jpeg` },
         ],
         subcategories: ["Pens & Pencils", "Erasers & Sharpeners", "Notebooks", "School Accessories"],
     },
@@ -68,15 +73,17 @@ const ALL_PRODUCTS = {
         subcategories: ["Handbags", "Belts", "Fashion Accessories"],
     },
     shoes: {
-        label: "School Shoes",
-        desc: "Comfortable and durable shoes for school students.",
-        waMsg: "Hi! I want to enquire about School Shoes at Jeya Hyper Store.",
+        label: "Footwears and School shoes",
+        desc: "Comfortable and durable footwear for all occasions, including formal school shoes, casual wear, and slippers.",
+        waMsg: "Hi! I want to enquire about Footwear and School Shoes at Jeya Hyper Store.",
         items: [
             { name: "School Shoes", img: `${BASE}School Shoes/shoes-1.jpg` },
             { name: "Black Shoes", img: `${BASE}School Shoes/shoes-2.jpg` },
             { name: "White Shoes", img: `${BASE}School Shoes/shoes-3.WEBP` },
+            { name: "Casual shoes and Chappels", img: `${BASE}School Shoes/shoes-4.jpeg` },
+            { name: "Slippers and Women's Footwear", img: `${BASE}School Shoes/shoes-5.jpeg` },
         ],
-        subcategories: ["School Shoes for all standards"],
+        subcategories: ["School Shoes", "Casual Shoes", "Chappels", "Slippers", "Women's Footwear"],
     },
     gifts: {
         label: "Gift Items & Decor",
@@ -100,6 +107,7 @@ const ALL_PRODUCTS = {
         items: [
             { name: "Necklace Sets", img: `${BASE}Jewels/jewel-1.jpg` },
             { name: "Elegant Jewels", img: `${BASE}Jewels/jewel-2.jpg` },
+            { name: "Earings", img: `${BASE}Jewels/jewel-3.jpeg` },
         ],
         subcategories: ["Premium Jewels"],
     },
@@ -110,6 +118,7 @@ const ALL_PRODUCTS = {
         items: [
             { name: "Teddy Bears", img: `${BASE}Toys & Kids/toys-1.jpg` },
             { name: "Action Toys", img: `${BASE}Toys & Kids/toys-2.jpg` },
+            { name: "Carrom Boards", img: `${BASE}Toys & Kids/toys-3.jpeg` },
         ],
         subcategories: ["Action Toys", "Toy Vehicles", "Educational Toys", "Kids Toys", "Teddy Bears", "Plush Toys"],
     },

@@ -4,11 +4,15 @@ import SketchBackground from './SketchBackground';
 const faqs = [
     {
         q: 'What are your store timings?',
-        a: 'We are open every day from 8:00 AM to 10:00 PM.',
+        a: 'We are open every day from 8:00 AM to 10:00 PM, including Sundays.',
     },
     {
         q: 'Where is Jeya Hyper Store located?',
-        a: 'We are at RJ7P+37V, Vayalur Rd, Somarasempettai, Tiruchirappalli, Tamil Nadu 620102.',
+        a: (
+            <span>
+                We are at <a href="https://www.google.com/maps/place/Jeya+Hyper+Store/@10.8127737,78.6358536,17z/data=!3m1!4b1!4m6!3m5!1s0x3baa5fb9f1bf1109:0x5695552fc3be3160!8m2!3d10.8127737!4d78.6358536!16s%2Fg%2F11tfv_0x8y?entry=ttu&g_ep=EgoyMDI2MDMxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noreferrer" style={{ color: 'var(--gold)', textDecoration: 'underline' }}>RJ7P+37V, Vayalur Rd, Somarasempettai, Tiruchirappalli</a>.
+            </span>
+        ),
     },
     {
         q: 'What products do you sell?',
@@ -16,7 +20,11 @@ const faqs = [
     },
     {
         q: 'Can I place orders on WhatsApp?',
-        a: 'Yes! Send your order or enquiry on WhatsApp at +91 93454 91984 and we\'ll reply shortly.',
+        a: (
+            <span>
+                Yes! Send your order or enquiry on <a href="https://wa.me/919345491984" target="_blank" rel="noreferrer" style={{ color: 'var(--gold)', textDecoration: 'underline' }}>WhatsApp at +91 93454 91984</a> and we'll reply shortly.
+            </span>
+        ),
     },
     {
         q: 'Do you offer home delivery?',
@@ -24,7 +32,7 @@ const faqs = [
     },
     {
         q: 'Do you accept UPI and card payments?',
-        a: 'Yes! We accept cash, UPI (GPay, PhonePe, Paytm) and card payments for your convenience.',
+        a: 'Yes! We accept cash, UPI (GPay, PhonePe, Paytm), Pluxee (Sodexo), and card payments including RuPay, Visa, and Mastercard for your convenience.',
     },
     {
         q: 'Do you have school shoes for all sizes?',

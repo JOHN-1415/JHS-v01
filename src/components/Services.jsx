@@ -37,9 +37,9 @@ const SERVICES = [
     },
     {
         id: "shoes",
-        label: "School Shoes",
+        label: "Foot Wears",
         coverImg: `${BASE}School Shoes/shoes-1.jpg`,
-        desc: "Comfortable and durable shoes for school students.",
+        desc: "Comfortable and durable footwear for all occasions.",
     },
     {
         id: "gifts",
@@ -74,7 +74,7 @@ function Services({ setCurrentPage }) {
             <div className="container" style={{ position: 'relative', zIndex: 1 }}>
                 <div className="text-center reveal">
                     <span className="section-label">Our Services</span>
-                    <h2 className="section-title">Services We Are Providing</h2>
+                    <h2 className="section-title">Services we are providing</h2>
                     <p className="section-desc">
                         From daily groceries to school essentials — explore what we offer for your family.
                     </p>

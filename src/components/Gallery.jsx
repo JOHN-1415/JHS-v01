@@ -10,7 +10,7 @@ const galleryItems = [
     { src: `${BASE}Spices & Cooking Essentials/cooking-essentials-1.jpg`, caption: 'Spices & Cooking Essentials', featured: false },
     { src: `${BASE}Stationery & School Supplies/stationery-1.jpg`, caption: 'Stationery & School Supplies', featured: false },
     { src: `${BASE}Fashion & Accessories/fashion-1.webp`, caption: 'Fashion Accessories', featured: false },
-    { src: `${BASE}School Shoes/shoes-1.jpg`, caption: 'School Shoes', featured: false },
+    { src: `${BASE}School Shoes/shoes-1.jpg`, caption: 'Footwears and School shoes', featured: false },
     { src: `${BASE}Gift Items & Decor/gifts-1.jpg`, caption: 'Gift Items & Decor', featured: false },
     { src: `${BASE}Jewels/jewel-1.jpg`, caption: 'Jewels', featured: false },
     { src: `${BASE}Toys & Kids/toys-1.jpg`, caption: 'Toys & Kids', featured: false },
