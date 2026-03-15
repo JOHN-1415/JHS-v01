@@ -99,7 +99,7 @@ const ALL_PRODUCTS = {
         waMsg: "Hi! I want to enquire about Jewellery at Jeya Hyper Store.",
         items: [
             { name: "Necklace Sets", img: `${BASE}Jewels/jewel-1.jpg` },
-            { name: "Wedding Jewellery", img: `${BASE}Jewels/jewel-2.jpg` },
+            { name: "Elegant Jewels", img: `${BASE}Jewels/jewel-2.jpg` },
         ],
         subcategories: ["Premium Jewels"],
     },
