@@ -25,7 +25,7 @@ const ALL_PRODUCTS = {
         items: [
             { name: "Dishwash Liquids", img: `${BASE}Household & Cleaning/cleaning-1.jpg` },
             { name: "Bathroom Cleaners", img: `${BASE}Household & Cleaning/cleaning-2.jpg` },
-            { name: "Water Bottles and Cooking Wares", img: `${BASE}Household & Cleaning/cleaning-3.jpeg` },
+            { name: "Water Bottles and Kitchenware", img: `${BASE}Household & Cleaning/cleaning-3.jpeg` },
         ],
         subcategories: ["Toilet Cleaners", "Floor Cleaners", "Bathroom Cleaners", "Dishwash Liquids", "Water Bottles", "Cooking wares"],
     },
@@ -80,7 +80,7 @@ const ALL_PRODUCTS = {
             { name: "School Shoes", img: `${BASE}School Shoes/shoes-1.jpg` },
             { name: "Black Shoes", img: `${BASE}School Shoes/shoes-2.jpg` },
             { name: "White Shoes", img: `${BASE}School Shoes/shoes-3.WEBP` },
-            { name: "Casual shoes and Chappels", img: `${BASE}School Shoes/shoes-4.jpeg` },
+            { name: "Casual shoes and Chappals", img: `${BASE}School Shoes/shoes-4.jpeg` },
             { name: "Slippers and Women's Footwear", img: `${BASE}School Shoes/shoes-5.jpeg` },
         ],
         subcategories: ["School Shoes", "Casual Shoes", "Chappels", "Slippers", "Footwears"],

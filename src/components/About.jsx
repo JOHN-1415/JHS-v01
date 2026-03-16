@@ -53,8 +53,8 @@ function About() {
                             <p>To offer a wide range of quality products — from daily groceries to school essentials, gifts, toys, jewellery and stationery — with warm service, honest pricing, and a shopping experience that feels like home.</p>
                         </div>
                         <div className="vm-card goals">
-                            <h4>Our Goals</h4>
-                            <p>To continuously expand our offerings, enhance our digital presence, and maintain the highest standards of quality and service for the Somarasampettai community.</p>
+                            <h4>Our Values</h4>
+                            <p>We are committed to integrity, customer satisfaction, and community growth. Our values drive us to provide the best shopping experience with honesty and dedication to every customer we serve.</p>
                         </div>
                     </div>
                 </div>
